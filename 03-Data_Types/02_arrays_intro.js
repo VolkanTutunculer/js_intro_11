@@ -14,6 +14,10 @@ const favoriteMovies = ['Matrix', 'Avengers', 'Fast and Furious'];
 console.log(favoriteMovies);
 console.log(typeof favoriteMovies); // object
 
+// Getting the size of the array - How many elements you have in the array
+let sizeOfArray = favoriteMovies.length;
+console.log(sizeOfArray);)
+
 // Acces an specific element in the array
 
 console.log(favoriteMovies[1]);
@@ -25,3 +29,4 @@ console.log(favoriteMovies [2]); // Fast and Furious
 console.log(typeof favoriteMovies[2]); // string
 
 console.log(favoriteMovies[3]); // undefined
+console.log(favoriteMovies[-1]); // undefined
