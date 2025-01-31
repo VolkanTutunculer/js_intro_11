@@ -30,3 +30,20 @@ console.log(typeof favoriteMovies[2]); // string
 
 console.log(favoriteMovies[3]); // undefined
 console.log(favoriteMovies[-1]); // undefined
+
+const cities = ['Rome', 'Berlin'];
+
+console.log(cities.length);
+
+cities[1] = 'Chicago';
+
+console.log(cities); // ['Rome', 'Chicago']
+
+// Add new element
+// cities[2] = 'Miami'; risky
+
+cities.push('Miami');
+
+cities.push('Milan', 'Gent');
+
+console.log(cities);
