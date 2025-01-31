@@ -23,4 +23,22 @@ console.log(city);
 
 city = 'New York';
 
+city = 'Los Angeles';
+
 console.log(city);
+
+// initialization of a variable = declaration + assignment
+let country = 'USA';
+
+
+// 1. Initialization
+// let name = 'John';
+// let age = 45;
+
+// 2. Declaration
+// let name;
+// let age;
+
+// 3. Assignment or re-assignment
+// name = 'John';
+// age = 45;
