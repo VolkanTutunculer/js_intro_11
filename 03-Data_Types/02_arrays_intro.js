@@ -47,3 +47,13 @@ cities.push('Miami');
 cities.push('Milan', 'Gent');
 
 console.log(cities);
+
+const ids = [99, 100, 101, 102, 103, 104];
+
+let firstElement = ids[0];
+let lastElement = ids[ids.length - 1];
+
+console.log(firstElement);
+console.log(lastElement);
+
+const mixArray = [5, 'John', true, 3===0, Symbol('Foo'), 10.99, undefined, null, NaN, {}, []];
