@@ -12,3 +12,5 @@ let city1 = "Chicago";
 let city2 = "New York";
 
 console.log(city2);
+console.log(city2);
+
