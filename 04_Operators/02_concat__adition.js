@@ -29,3 +29,10 @@ console.log('The difference of 5 and 3 = ' + (5 - 3)); // The difference of 5 an
 console.log('The division of 6 and 2 is ' + 6 / 2); // The division of 6 and 2 is 3
     
 console.log('The remainder of 6 and 2 is = ' + 6 % 2); // The remainder of 6 and 2 is = 0
+
+
+let today = 'Sunday';
+
+console.log('Today is ' + today); // Today is Sunday // preffered as second option
+console.log('today is', today); // today is Sunday
+console.log(`today is ${today}`); // today is Sunday // preferred 
