@@ -20,3 +20,10 @@ console.log(5 ** 4); // 625
 
 
 console.log(2**5 / 4 + 3 * 2);
+
+// Modulus - Remainder
+
+console.log(15 % 4); // 3
+
+console.log(2 * 5 % 3 - 7); // -6
+console.log(5 + 16 % 7 + 2); // 9
