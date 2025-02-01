@@ -65,3 +65,13 @@ RETURN: returns a char as a string
 DOES IT CHANGE ORIGINAL VALUE: No
 STATIC or INSTANCE: instance
 */
+
+/*
+
+at()
+TASK: sed to retrieve a char from string at specified index
+    note: index could be negative as well (counting backworks)
+ARGUMENTS: yes, it takes an index
+DOES IT CHANGE ORIGINAL VALUE: No
+STATIC or INSTANCE: instance
+*/
