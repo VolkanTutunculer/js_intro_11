@@ -12,4 +12,4 @@ console.log(-Infinity * Infinity); // -Infinity
 console.log(Infinity - Infinity); // NaN
 console.log(Infinity / Infinity); // NaN
 console.log(Infinity % Infinity); // NaN
-console.log(Infinity ** Infinity); // Infinity
+console.log(Infinity ** Infinity); // Infinity 
