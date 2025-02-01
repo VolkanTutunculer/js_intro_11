@@ -42,4 +42,11 @@ myAccount.method2(); // 'I am a instance method'
 
 
 
-const arr = []
+let str = 'kdjfhglskdhglsahdglsdjhgjhdsgfjhsdg';
+
+First char: str[0];
+Second char: str[1];
+Third char: str[2];
+
+Last char: str.at(-1);
+Second from the last: str.at(-2);
