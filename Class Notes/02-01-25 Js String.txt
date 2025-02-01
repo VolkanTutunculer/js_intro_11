@@ -1,0 +1,45 @@
+
+String: 
+Text data
+Stored using single or double quotes
+
+String Templates - Backticks
+-   let fname = 'John';
+-   let lname = 'Doe';
+-   let fullname = `${fname} ${lname}`;
+
+
+Static vs Instance Methods
+
+        How do i invoke the method?
+
+By Built in object              by creating a value and with value
+Static method                   instance Methods
+
+Math.max(); // static method
+Number.parseInt(); // static method
+
+let num = 25.99;
+
+num.toFixed(1); // non-static, instance method
+
+-in the future
+class Account {
+    static method1() {
+        console.log('I am a static method);
+}
+
+method2() {
+    console.log('I am a instance method');
+    }
+}
+
+Account.method1(); // 'I am static method'
+
+let myAccount = new Account();
+myAccount.method2(); // 'I am a instance method'
+
+
+
+
+const arr = []
