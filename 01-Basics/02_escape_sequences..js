@@ -31,4 +31,4 @@ I enjoy it so far!`); // With backticks you dont need to use \n for new line or 
 // My file can be found at C:\My Documents\MyFile.txt
 console.log('My file can be found at C:\\My Documents\\MyFile.txt'); // you need to use backword slash twice.
 
-console.log('Hellow\\\\\\Word'); // print Hello\\\\World
+console.log('Hello\\\\\\Word'); // print Hello\\\\World
