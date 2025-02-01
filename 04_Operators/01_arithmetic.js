@@ -15,3 +15,5 @@ console.log(num4 - (num3 - num1) * num2);
 // Exponentiation
 
 console.log(3 ** 2); // 9
+console.log(4 ** 3); // 64
+console.log(5 ** 4); // 625 
