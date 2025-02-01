@@ -16,5 +16,5 @@ let quantity = 10;
 
 // The total price is = $25
 
-console.log(`The total price is = $${price * quantity}`);
+console.log(`The total price is = $${price * quantity}`); // prefere this way
 console.log('The total price is = $' + price * quantity);   
