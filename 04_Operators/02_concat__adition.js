@@ -19,3 +19,13 @@ console.log(5 * false); // 0 // false is converted to 0
 
 console.log(5 * ''); // 0 // empty string is converted to 0
 console.log(5 * '   '); // 0 // empty space is converted to 0
+
+console.log('the sum of 3 and 5 = ' + 3 + 5); // the sum of 3 and 5 = 35
+
+console.log('the sum of 3 and 5 = ' + (3 + 5)); // the sum of 3 and 5 = 8 
+
+console.log('The difference of 5 and 3 = ' + (5 - 3)); // The difference of 5 and 3 = 2
+      
+console.log('The division of 6 and 2 is ' + 6 / 2); // The division of 6 and 2 is 3
+    
+console.log('The remainder of 6 and 2 is = ' + 6 % 2); // The remainder of 6 and 2 is = 0
