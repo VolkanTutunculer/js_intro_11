@@ -98,3 +98,31 @@ console.log(today.indexOf('r ')); //4
 
 // if there is only one match of the sarched string, then indexOf() and
 // lastIndexOf() will always return the same index.
+// -1 means i dont have the string.
+
+
+// Make sure the address has Street keyword
+let myAddress = '123 Street Chicago';
+console.log(myAddress.indexOf('Street') !== -1); // True
+console.log(myAddress.indexOf('12345') !== -1); // False
+
+/*
+indexOf()
+TASK: check if the original string has a substring
+ARGUMENTS: yes, a substring
+RETURN: returns thr first found index of the matching substring within original string
+DOES IT CHANGE ORIGINAL VALUE: No
+STATIC or INSTANCE: Instance
+*/
+
+/*
+lastIndexOf()
+TASK: check if the original string has a substring
+ARGUMENTS: yes, a substring
+RETURN: returns thr last found index of the matching substring within original string
+DOES IT CHANGE ORIGINAL VALUE: No
+STATIC or INSTANCE: Instance
+*/
+
+console.log('can i can a can'.indexOf('can')); // 0
+console.log('can i can a can'.lastIndexOf('can')); // 12
