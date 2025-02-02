@@ -13,7 +13,7 @@ When we create our custom functions or methods, we should
 always have below defined before starting
 
 TASK:
-ARGS:
+ARGS - PARAMETORS:
 RETURN:
 
 BENEFITS of CREATINF CUSTOM FUNCTIONS - METHODS:
@@ -39,3 +39,20 @@ function printHi() {
 
 }
  
+
+void method-functions: they do not return any value
+
+return method-functions: they return a value
+
+RETURN TYPE FUNCTIONS
+these are function returning a value-data when invoked
+
+function multiply(num1, num2) {
+    let result = num1 * num2;
+    return result;
+}
+
+
+
+utilities (utils), helpers, suppor
+- we will have reusable functions. 
