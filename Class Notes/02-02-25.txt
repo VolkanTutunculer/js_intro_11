@@ -1,0 +1,41 @@
+
+
+number methods
+math methods
+string methods
+
+
+Additional Methods or Functions
+1. Libraries
+Custom methods or functions
+
+When we create our custom functions or methods, we should 
+always have below defined before starting
+
+TASK:
+ARGS:
+RETURN:
+
+BENEFITS of CREATINF CUSTOM FUNCTIONS - METHODS:
+- It makes programing easier, creating program-apps easier
+-REUSABILITY: create once, use everywhere whenever needed
+
+
+getRandomNUmber(start, end);
+
+
+How do we create functions:
+1. we use function keyword to declare a function
+2. we give our function always a meaningful name
+3. decide if you will have args or no
+4. implement the body of the function: block of the code will be executed each 
+    time you invoke the function.
+
+// Function declaration
+
+function printHi() {
+
+    console.log('Hi);
+
+}
+ 
