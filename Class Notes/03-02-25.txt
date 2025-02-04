@@ -29,3 +29,8 @@ function getTitle() {
 
 return "Wiki";
 }
+
+HOISTING: moving variable Declarations to the top evethough its not above the code
+1. Function Declaration
+2. Function Expression
+3. Arrow Functions
