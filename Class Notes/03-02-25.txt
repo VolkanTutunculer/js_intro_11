@@ -1,0 +1,31 @@
+RECAP:
+Function: it is a block of code used to run a specific task - which can be executed repeatedly.
+It can take parameters (arguments).
+It can be return (returns a value-data back when invoked) or void (does not return anything but just runs a task)
+
+function launchChrome() {
+// body
+}
+
+function loginToApp (username, password) {
+//
+}
+
+lunchChrome();
+goToThechGlobalTrainigApp();
+loginToApp();
+
+let actualTitle = getTitle(); //
+let expectedTItle = 'Welcome to TechGlobal School Training';
+
+if (actualTitle === expectedTItle) {
+    // Test Passed
+}
+else{
+    // Failed
+}
+
+function getTitle() {
+
+return "Wiki";
+}
