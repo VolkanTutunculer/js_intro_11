@@ -31,7 +31,6 @@ initials('Max', 'Smith')     -> 'M.S.'
 
 
 function initials(fname, lname) {
-    //return fname[0].toUpperCase() + '.' + lname[0].toUpperCase() + '.';
     return `${fname[0]}.${lname[0]}.`;
 }
 
@@ -39,3 +38,28 @@ function initials(fname, lname) {
 console.log(initials('John', 'Doe'));
 console.log(initials('Adam', 'Smith'));
 console.log(initials('Max', 'Smith'));
+
+
+/*
+Write a function named inits which takes a fullname and return initials
+
+inits('John Doe')      -> 'JD'
+inits('Adam smith')    -> 'AS'
+inits('max Smith')     -> 'MS'
+*/
+
+function inits(fullname) {
+
+    /*
+    let fullnameArr = fullname.split(''); // ['', '']
+    
+    return (fullnameArr[0] [0] + '.' + fullnameArr[1] [0] + '.').toUpperCase();
+    */
+   
+    return `${fullname[0]}.${fullname [fullname.indexOf(' ') + 1]}.`.toUpperCase();
+}
+
+console.log(inits('John Doe'));
+console.log(inits('Adam smith'));
+console.log(inits('max Smith'));
+
