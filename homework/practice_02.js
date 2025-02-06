@@ -287,4 +287,4 @@ ReqEx  -> Regular Expressions
 */
 
 let s9 = " Good        morning     ";
-console.log(s9.trim().split(/\s+/).length); // /\s+/ many numbers of  --- s means space
+console.log(s9.trim().split(/\s+/)); // /\s+/ many numbers of  --- s means space
