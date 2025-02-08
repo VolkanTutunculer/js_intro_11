@@ -16,9 +16,17 @@ else {
     console.log('NEG');
 }
 
-// OR
+// Nested if-else statements
 
-let result1 = ran1 >0 ? 'POS' : ran1 == 0 ? 'NEUTRAL' : 'NEG';
-console.log(result1);
+if(ran1 > 0) {
+    console.log('POS');
+}
+else {
+    if (ran1 == 0) {
+        console.log('NEUTRAL');
+    }
+    else {
+        console.log('NEG');
+    }
+}
 
-console.log('End of program!')
