@@ -1,0 +1,9 @@
+const date = new Date();
+
+console.log(date.getFullYear()); // 2025
+console.log(date.getDay()); // current day (0 - 6)
+console.log(date.getHours()); // current hour
+console.log(date.getMinutes()); // current minute
+console.log(date.getSeconds()); // current second
+console.log(date.getMonth()); // current month (0-11)
+console.log(date.getDate()); // current date (1-28 for February)
