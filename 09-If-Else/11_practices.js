@@ -45,3 +45,22 @@ switch (dayOfTheWeek) {
     default:
         console.log('Weekday');
 }
+
+// Or with Ternary
+let result = dayOfTheWeek === 0 || dayOfTheWeek === 6 ? 'Weekend' : 'Weekday';
+console.log(result);
+
+
+
+
+function EvenOdd(number) {
+    if (number % 2 === 0) {
+        return 'EVEN';
+    }
+    else {
+        return 'ODD';
+    }
+}
+
+console.log(EvenOdd(2));
+console.log(EvenOdd(3));
