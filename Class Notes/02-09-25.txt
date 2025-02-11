@@ -7,3 +7,28 @@ console.log(date.getMinutes()); // current minute
 console.log(date.getSeconds()); // current second
 console.log(date.getMonth()); // current month (0-11)
 console.log(date.getDate()); // current date (1-28 for February)
+
+
+/e/.test('Hello');
+
+/apple/.test('Apple is recognized world wide.'); // false
+
+/apple/i.test('Apple is recognized world wide.'); // true
+
+/[abc]/.test('Hello'); // false
+
+/[abc]/.test('apple'); // true
+
+/[0-9]/.test('ab1c'); // true
+
+/[a-z]/.test('ab1c'); // true
+
+/[A-Z]/.test('ab1c'); // false // looks for Uppercase
+
+/[0-9a-zA-Z]/.test('ab1c'); // true // looks for number and word upper and lower 
+
+anything starts with e and ends with g wecan do below
+
+/e.g/    ---> egg eng
+/e.+g/   ---> engineering 
+
