@@ -39,36 +39,41 @@ console.log(number3);
 
 //TASK 3
 
-function hasA(word) {
-    return /^a/i.test(word);
+function hasA(string) {
+    return /^a/i.test(string);
 }
+/*
 console.log(hasA("arda"));
 console.log(hasA("Tech"));
 console.log(hasA("Global"));
 console.log(hasA(""));
 console.log(hasA("Apple"));
+*/
+
 
 // TASK 4
 
-function doubleOrTripleWord(stringWord) {
-    if (stringWord.length % 2 === 0){
-        return (`"${stringWord+stringWord+stringWord}"`);
+function doubleOrTripleWord(string) {
+    if (string.length % 2 === 0){
+        return (`"${string+string+string}"`);
     }
 
-    else if (stringWord.length % 2 === 1 && /[1-9a-zA-Z]/.test(stringWord)) {
-        return (`"${stringWord+stringWord}"`);
+    else if (string.length % 2 === 1 && /[1-9a-zA-Z]/.test(string)) {
+        return (`"${string+string}"`);
     }
     else {
-        return `"${stringWord}"`;
+        return `"${string}"`;
     }
 }
-
+/*
 console.log(doubleOrTripleWord("Tech"));
 console.log(doubleOrTripleWord("Apple"));
 console.log(doubleOrTripleWord(""));
 console.log(doubleOrTripleWord(" "));
 console.log(doubleOrTripleWord("1"));
 console.log(doubleOrTripleWord("22"));
+*/
+
 
 // TASK 5
 
@@ -101,6 +106,7 @@ function lastWord(string) {
         return `"${""}"`;
     }
 }
+/*
 console.log(lastWord("  I   have     pen"))
 console.log(lastWord("my phone number 5555"))
 console.log(lastWord("Hello World"));
@@ -108,18 +114,20 @@ console.log(lastWord("I like JavaScript"));
 console.log(lastWord("Hello"));
 console.log(lastWord(""));
 console.log(lastWord(" "));
+*/
 
 
 // TASK 7
 
-function fLastWord(str) {
-    if (/[a-zA-Z]/.test(str)){
-        return ((str.trim().split(/\s+/).find(word =>/[a-zA-Z]/.test(word)))+(str.trim().split(/\s+/).findLast(word =>/[a-zA-Z]/.test(word)))); 
+function fLastWord(string) {
+    if (/[a-zA-Z]/.test(string)){
+        return ((string.trim().split(/\s+/).find(word =>/[a-zA-Z]/.test(word)))+(string.trim().split(/\s+/).findLast(word =>/[a-zA-Z]/.test(word)))); 
     }
     else {
         return `"${""}"`;
     }
 }
+/*
 console.log(fLastWord("  I   have     pen"))
 console.log(fLastWord("5555  my phone number 5555"))
 console.log(fLastWord("Hello World"));
@@ -127,19 +135,22 @@ console.log(fLastWord("I like JavaScript"));
 console.log(fLastWord("Hello"));
 console.log(fLastWord(""));
 console.log(fLastWord(" "));
-
+*/
 
 // TASK 8
 
-function startVowel (str1) {
-    return /^[aeiou]/i.test(str1)
+function startVowel (string) {
+    return /^[aeiou]/i.test(string)
 }
-
+/*
 console.log(startVowel("Hello"));
 console.log(startVowel("Apple"));
 console.log(startVowel("orange"));
 console.log(startVowel(""));
 console.log(startVowel(" "));
 console.log(startVowel("123"));
+*/
 
+
+// TASK 9
 
