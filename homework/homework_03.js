@@ -1,11 +1,4 @@
-const { characterHelper } = require('./../utils/CharacterHelper.js')
 const { getRandomNumber } = require('./../utils/MathHelper.js')
-
-let str = 'Hello';
-
-console.log(characterHelper.isVowel(str[0]));
-
-
 // TASK 1
 
 num1 = getRandomNumber(1, 100);
@@ -117,7 +110,36 @@ console.log(lastWord(""));
 console.log(lastWord(" "));
 
 
+// TASK 7
+
+function fLastWord(str) {
+    if (/[a-zA-Z]/.test(str)){
+        return ((str.trim().split(/\s+/).find(word =>/[a-zA-Z]/.test(word)))+(str.trim().split(/\s+/).findLast(word =>/[a-zA-Z]/.test(word)))); 
+    }
+    else {
+        return `"${""}"`;
+    }
+}
+console.log(fLastWord("  I   have     pen"))
+console.log(fLastWord("5555  my phone number 5555"))
+console.log(fLastWord("Hello World"));
+console.log(fLastWord("I like JavaScript"));
+console.log(fLastWord("Hello"));
+console.log(fLastWord(""));
+console.log(fLastWord(" "));
 
 
+// TASK 8
+
+function startVowel (str1) {
+    return /^[aeiou]/i.test(str1)
+}
+
+console.log(startVowel("Hello"));
+console.log(startVowel("Apple"));
+console.log(startVowel("orange"));
+console.log(startVowel(""));
+console.log(startVowel(" "));
+console.log(startVowel("123"));
 
 
