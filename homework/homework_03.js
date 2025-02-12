@@ -154,3 +154,49 @@ console.log(startVowel("123"));
 
 // TASK 9
 
+function swap4(string) {
+    if (string.trim(/\s+/).length >= 8) {
+        let frst = string.slice(0, 4);
+        let middle = string.slice(4, string.length - 4);
+        let lst = string.slice(string.length - 4, string.length);
+        return (lst + middle + frst)
+    }
+    else {
+        return "";
+    }
+}
+
+/*
+console.log(swap4("abc"));
+console.log(swap4("JavaScript"));
+console.log(swap4("TechGlobal"));
+console.log(swap4(""));
+console.log(swap4("  "));
+console.log(swap4("Apple"));
+console.log(swap4("          ")); 
+*/
+
+// TASK 10
+
+function swapFirstLastWord(string) {
+    string = string.replace(/\s+/g, " ").trim();
+    if (string.indexOf(' ') > 0) {
+        let frst = string.slice(0, string.indexOf(' '));
+        let lst = string.slice(string.lastIndexOf(' ') + 1);
+        let middle = string.slice(string.indexOf(' '), string.lastIndexOf(' ') + 1);
+        return lst + middle + frst;
+    }
+    else {
+        return "''";
+    }
+}
+
+console.log(swapFirstLastWord("      I like     JavaScript      "));
+console.log(swapFirstLastWord("Hello World"));
+console.log(swapFirstLastWord("I like JavaScript"));
+console.log(swapFirstLastWord("foo bar foo bar"));
+console.log(swapFirstLastWord(""));
+console.log(swapFirstLastWord("    "));
+console.log(swapFirstLastWord("Hello"));
+console.log(swapFirstLastWord("Hello   "));
+
