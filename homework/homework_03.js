@@ -190,7 +190,7 @@ function swapFirstLastWord(string) {
         return "''";
     }
 }
-
+/*
 console.log(swapFirstLastWord("      I like     JavaScript      "));
 console.log(swapFirstLastWord("Hello World"));
 console.log(swapFirstLastWord("I like JavaScript"));
@@ -199,4 +199,5 @@ console.log(swapFirstLastWord(""));
 console.log(swapFirstLastWord("    "));
 console.log(swapFirstLastWord("Hello"));
 console.log(swapFirstLastWord("Hello   "));
+*/
 
