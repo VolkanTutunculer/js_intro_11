@@ -27,3 +27,78 @@ console.log(`First name: ${nameParts[0][0].toUpperCase() + nameParts[0].slice(1)
 console.log(`Last name: ${nameParts[nameParts.length - 1][0].toUpperCase() + nameParts[nameParts.length - 1].slice(1)}`);
 
 console.log(`Age: ${currentYear - bornYear}`);
+
+
+
+
+
+function fizzBuzz(start, end){
+    let number = Math.floor(Math.random() * (end - start + 1)) + start;
+    if (number % 15 === 0){
+        return "FizzBuzz";
+    }
+    else if (number % 5 === 0){
+        return "Buzz";
+    }
+    else if (number % 3 === 0){
+        return "Fizz";
+    }
+    else {
+        return number;
+    }
+}
+
+
+console.log(fizzBuzz(1, 20));
+
+
+
+
+function reverseString(str){
+    return str.split("").reverse().join("");
+}
+
+console.log(reverseString("volkan"));
+
+
+
+
+
+
+let r1 = Math.floor(Math.random() * 50) + 1; ======> random number
+
+let r1 = Math.floor(Math.random() * 50) + 1;
+console.log(r1);
+console.log(r1 % 7 === 0);
+
+
+
+
+
+function startsVowel(word) {
+
+    return 'aeiouAEIOU'.includes(word[0]);
+
+}
+
+console.log(startsVowel("Tech"));
+console.log(startsVowel("Apple"));
+console.log(startsVowel("abc"));
+
+function isPrime(num) {
+    if (num <= 1) return false;
+    if (num <= 3) return true;
+
+    if (num % 2 === 0 || num % 3 === 0) return false;
+
+    for (let i = 5; i * i <= num; i += 6) {
+        if (num % i === 0 || num % (i + 2) === 0) return false;
+    }
+
+    return true;
+}
+
+console.log(isPrime(2));  // true
+console.log(isPrime(4));  // false
+console.log(isPrime(17)); // true
+
