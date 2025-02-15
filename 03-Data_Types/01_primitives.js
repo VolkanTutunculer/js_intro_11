@@ -83,12 +83,12 @@ console.log(typeof (5 == 5)); // boolean
 
 // What is difference between undefined and null ??????
 // undefined is for variables that are declared but not assigned a value
-// null is used intencially yto point absence of data
+// null is used intencially to point absence of data
 
 // undefined
 let today;
-console.log.log(today)
-console.log(typleof today);
+console.log(today);
+console.log(typeof today);
 
 // null
 

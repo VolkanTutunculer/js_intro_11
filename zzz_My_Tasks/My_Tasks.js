@@ -102,3 +102,39 @@ console.log(isPrime(2));  // true
 console.log(isPrime(4));  // false
 console.log(isPrime(17)); // true
 
+
+function reverseString(str){
+    return str.split("").reverse().join("");
+}
+
+console.log(reverseString("TechGLobal"));
+
+function isPalindrome(word) {
+    return word.split("").reverse().join("") === word;
+}
+
+console.log(isPalindrome("vallav"));
+
+
+function findLargestNUmber(arr){
+    return Math.max(...arr);
+}
+
+console.log(findLargestNUmber([1, 5, 55, 25]));
+
+function factorial(n){
+    if ( n === 0 || n === 1) return 1;
+    return n * factorial(n - 1);
+}
+
+console.log(factorial(5));
+
+
+function reverseString(str){
+    
+    if (reverseString.length === 0) return "";
+    return (str.slice(-reverseString.length + 1));
+}
+
+console.log(reverseString("volkan"));
+

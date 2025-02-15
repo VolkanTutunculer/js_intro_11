@@ -2294,5 +2294,1737 @@ console.log(`Age: ${currentYear - bornYear}`);
 
 
 
+console.log('I am learning if else statements');
 
+if (false){
+    console.log('I AM AN IF BLOCK');
+}
+
+console.log('End of the program');
+
+
+console.log('I am learning if else statements');
+
+let mood = true;
+
+if (mood) {
+    console.log('ALL GOOD!')
+}
+else {
+    console.log('HELL')
+}
+
+console.log('End of the program');
+
+
+/*
+English exam
+Passing score is 60 or above
+
+We will write a program to check if we pass the exam or failed.
+
+60 or above -> PASS
+else -> FAIL
+
+Asagidaki gibi kontrol yap
+
+EDGE SCENARIOS:
+59
+60
+61
+
+NICE TO HAVE:
+30
+100
+
+STILL GOOD TO HAVE
+'Hello'
+null
+undefined
+
+*/
+
+let examScore = 59;
+
+if (examScore >= 60){
+    console.log('PASS');
+}
+else {
+    console.log('FAIL');
+}
+
+/*
+// Short omitting curly braces ONE Statement if (examScore < 60) console.log('FAIL'); else console.log('PASS');
+*/
+
+/*
+Retirement age is 65
+
+We will write a program to check if we can be retired or not.
+
+age is greater than or equal 65 -> YOU CAN GET RETIRED
+else -> YOU CANNOT GET RETIRED!!!
+*/
+rAge = 65
+
+if (rAge >= 65 ){
+    console.log('YOU CAN GET RETIRED');
+}
+else {
+    console.log('YOU CANNOT GET RETIRED!!!');
+}
+
+let examScore = 60;
+
+let result = examScore >= 60 ? 'PASS' : 'FAIL';
+
+console.log(result);
+
+// OR
+
+examScore >= 60 ? console.log('PASS') : console.log('FAIL');
+
+// OR
+
+console.log(examScore >= 60 ? 'PASS' : 'FAIL');
+
+// Preferred
+
+let resultt = examScore >= 60 ? 'PASS': 'FAIL';
+
+console.log(resultt);
+
+let age = 65;
+let retirementAllowed = age >=65 ? 'YES': 'NO';
+console.log(retirementAllowed);
+
+
+/*
+                        ----   Ternary      ----
+let retirementAllowed = age >=65 ? 'YES': 'NO';
+                      -condition- -true- -false-
+*/
+
+let gender = 'female' ;
+
+let fname = gender === 'female' ? 'Jane' : 'John';
+
+console.log(fname);
+
+
+
+/*
+Write program that tells if the day is Weekend or a Weekday
+0 or 6 -> Weekend
+1-5 -> weekday
+*/
+const date = new Date();
+
+let dayOfTheWeek = date.getDay(); // 0-Sunday 6-Saturday
+console.log(dayOfTheWeek);
+
+let today = dayOfTheWeek === 0 || dayOfTheWeek === 6 ? 'Weekend' : 'Weekday';
+console.log(today);
+
+
+const { getRandomNumber} = require('./../utils/MathHelper.js');
+
+/* get ramdon number between -5 and 5. find if number is POS, NEG, NATURAL
+*/
+
+let ran1 = getRandomNumber(-5, 5);
+console.log(`The random num1 is = ${ran1}`);
+
+if (ran1 >0) {
+    console.log('POS');
+}
+else if (ran1 == 0) {
+    console.log('NEURTAL');
+}
+else {
+    console.log('NEG');
+}
+
+// OR
+
+let result1 = ran1 >0 ? 'POS' : ran1 == 0 ? 'NEUTRAL' : 'NEG';
+console.log(result1);
+
+console.log('End of program!')
+
+const { getRandomNumber} = require('./../utils/MathHelper.js');
+
+/* get ramdon number between -5 and 5. find if number is POS, NEG, NATURAL
+*/
+
+let ran1 = getRandomNumber(-5, 5);
+console.log(`The random num1 is = ${ran1}`);
+
+if (ran1 >0) {
+    console.log('POS');
+}
+else if (ran1 == 0) {
+    console.log('NEURTAL');
+}
+else {
+    console.log('NEG');
+}
+
+// Nested if-else statements
+
+if(ran1 > 0) {
+    console.log('POS');
+}
+else {
+    if (ran1 == 0) {
+        console.log('NEUTRAL');
+    }
+    else {
+        console.log('NEG');
+    }
+}
+
+
+let username = 'TechGlobal'; // TechGlobal
+let password = 'pasword' // Test1234
+
+if (username === 'TechGlobal') {
+    if (password === 'Test1234') {
+        console.log('You are logged in');
+    }
+    else {
+        console.log('Invalid Password. This password used by user John.Doe !');
+    }
+}
+else {
+    console.log('Invalid Username entered!');
+}
+
+
+
+/*
+Generate a random number between 1 and 12 (both inclusive) are considered as months
+1 January
+.
+.
+12 December
+
+Print "Winter" if the generated number is 12, 1, or 2
+Print "Spring" if the generated number is 3, 4, or 5
+Print "Summer" if the generated number is 6, 7, 8
+Print "Fall" if the generated number is 9, 10, 11
+*/
+const { getRandomNumber } = require('./../utils/MathHelper.js');
+let month = getRandomNumber(1, 12);
+console.log(month);
+if (month == 12 || month == 1 || month == 2) {
+    console.log('Winter')
+}
+else if (month == 3 || month == 4 || month == 5) {
+    console.log('Spring')
+}
+else if (month == 6 || month == 7 || month == 8) {
+    console.log('Summer')
+}
+else if (month == 9 || month == 10 || month == 11) {
+    console.log('Fall')
+}
+
+// OR
+
+if (month === 12 || month === 1 || month === 2) console.log('Winter');
+else if (month === 3 || month === 4 || month === 5) console.log('Spring');
+else if (month === 6 || month === 7 || month === 8) console.log('Summer');
+else console.log('Fall');
+
+// OR
+
+if (month === 12 || month === 1 || month === 2) console.log("Winter");
+else if (month <= 5) console.log("Spring");
+else if (month <= 8) console.log("Summer");
+else console.log("Fall");
+
+// OR
+
+let season =
+    month === 12 || month === 1 || month === 2
+        ? "Winter" : month <= 5
+            ? "Spring" : month <= 8
+                ? "Summer" : "Fall";
+
+console.log(season);
+/// condition ? valueIfTrue : valueIfFalse
+
+
+let price = 0;
+let brand = 'Samsung';
+let ssd = 128 ;
+let color = 'Black';
+
+if (brand === 'iPhone') {
+    price += 1000;
+    if (ssd === 16) price += 100;
+    else if (ssd === 32) price += 150;
+    else if (ssd === 64) price += 250;
+    else if (ssd === 128) price += 400;
+    else if (ssd === 256) price += 500;
+    else if (ssd === 512) price += 600;
+
+    if (color !== 'white') price +=100;
+}
+else {
+    price += 750;
+    if (ssd === 16) price += 50;
+    else if (ssd === 32) price += 100;
+    else if (ssd === 64) price += 200;
+    else if (ssd === 128) price += 300;
+    else if (ssd === 256) price += 400;
+    else if (ssd === 512) price += 500;
+
+    if (color !== 'white' && color !== 'black') price +=50; // It was if (color !== 'white' || color !== 'black') price +=50 ... || or is wrong here.. meaning is its not white its not black. two false means in or true and calculation adds 50 dollars. thats why it should be &&. this is debuggers and ours job to find this kind of things.
+}
+
+console.log(`Your custon ${brand} with ${ssd} GB SSD and ${color} color is $${price}`)
+
+
+const { getRandomNumber } = require('./../utils/MathHelper.js');
+
+let ran1 = getRandomNumber(1, 3);
+console.log(`Random number is ${ran1}`);
+
+/*
+if (ran1 === 1) {
+    console.log('ONE');
+}
+else if (ran1 === 2){
+    console.log('TWO');
+}
+else {
+    console.log('THREE');
+}
+*/
+
+switch(ran1) {
+    case 1:
+        console.log('ONE');
+        break;
+    case 2:
+        console.log('TWO');
+        break;
+    default:
+        console.log('THREE');    
+}
+
+console.log('End of the program!');
+
+// This is something not available in java-C#
+
+const { getRandomNumber } = require('./../utils/MathHelper.js');
+
+let ran1 = getRandomNumber(-100, 100);
+console.log(`Random number is ${ran1}`);
+
+switch (true) {
+    case ran1 > 0:
+        console.log('POS');
+        break;
+    case ran1 < 0:
+        console.log('NEG');
+        break
+    default:
+        console.log('NEUTRAL');
+}
+
+// It Same As below but in switch format
+if(ran1 > 0) {
+    console.log('POS');
+}
+else {
+    if (ran1 == 0) {
+        console.log('NEUTRAL');
+    }
+    else {
+        console.log('NEG');
+    }
+}
+
+const date = new Date();
+
+let dayOfTheWeek = date.getDay(); // 0-Sunday 6-Saturday
+console.log(dayOfTheWeek);
+
+/*
+Write program that tells if the day is Weekend or a Weekday
+0 or 6 -> Weekend
+1-5 -> weekday
+*/
+
+if (dayOfTheWeek === 0 || dayOfTheWeek === 6) {
+    console.log('Weekend');
+}
+else {
+    console.log('Weekday');
+}
+
+switch (true) {
+    case dayOfTheWeek === 0 || dayOfTheWeek === 6:
+        console.log('Weekend');
+        break;
+    default:
+        console.log('Weekday');
+}
+
+switch (dayOfTheWeek) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        console.log('Weekday');
+        break;
+
+    default:
+        console.log('Weekend');
+}
+
+switch (dayOfTheWeek) {
+    case 0:
+    case 6:
+        console.log('Weekend');
+        break;
+    default:
+        console.log('Weekday');
+}
+
+// Or with Ternary
+let result = dayOfTheWeek === 0 || dayOfTheWeek === 6 ? 'Weekend' : 'Weekday';
+console.log(result);
+
+
+
+
+function EvenOdd(number) {
+    if (number % 2 === 0) {
+        return 'EVEN';
+    }
+    else {
+        return 'ODD';
+    }
+}
+
+console.log(EvenOdd(2));
+console.log(EvenOdd(3));
+
+function evenOdd(number) {
+    let result = number % 2 == 0 ? 'EVEN' : 'ODD';
+    return result;
+}
+
+console.log(even0dd(2));
+console.log(even0dd(3));
+
+// OR 
+
+function evenOdd(number) {
+    return number % 2 === 0 ? 'EVEN' : 'ODD';
+}
+
+console.log(evenOdd(2));
+console.log(evenOdd(3));
+
+function posNegZero(number) {
+    if (number > 0) {
+        return 'Positive'
+    }
+    else if (number < 0) {
+        return 'Negative'
+    }
+    return 'Zero';
+}
+
+// OR
+
+function posNegZero(number) {
+    if (number > 0) return 'Positive'
+    else if (number < 0) return 'Negative'
+    return 'Zero';
+}
+
+// OR - Ternery
+
+function posNegZero(number) {
+    return number > 0 ? 'POS' : number < 0 ? 'Neg' : 'Zero';
+}
+
+// OR - arrow
+
+const posNegZero = (number) => {
+    return number > 0 ? 'POS' : number < 0 ? 'Neg' : 'Zero';
+}
+
+console.log(posNegZero(1));
+console.log(posNegZero(0));
+console.log(posNegZero(-1));
+
+
+
+/*
+Write function that takes a name and check if it starts with 'E' or 'e' and returns a boolean
+Function name is startE.
+NOTE: If the given name is empty -> then return false
+
+startE('Emily') -> true
+startE('emily') -> true 
+startE('Alex') -> false 
+startE('') -> false
+startE('John') -> false
+*/
+
+function startE(name) {
+    if (name === ''){
+        return false;
+    }
+
+    return name[0] === 'E' || name[0] === 'e';
+}
+console.log(startE('Emily')); 
+console.log(startE('emily')); 
+console.log(startE('Alex'));  
+console.log(startE(''));     
+console.log(startE('John')); 
+// OR 
+
+function startE(name){
+    return name.toLowerCase().startsWith("e"); 
+}
+
+console.log(startE('Emily')); 
+console.log(startE('emily')); 
+console.log(startE('Alex'));  
+console.log(startE(''));     
+console.log(startE('John')); 
+// OR 
+
+const startEArrow = name => name.toLowerCase().startsWith('e');
+console.log(startEArrow('Emily')); 
+console.log(startEArrow('emily')); 
+console.log(startEArrow('Alex'));  
+console.log(startEArrow(''));     
+console.log(startEArrow('John')); 
+
+
+
+/*
+Write a function called divisible5 and it takes a number as an argument
+It will return true if the number is divisible by 5
+It will return false if the number is NOT divisible by 5
+
+divisible5(7)       -> false
+divisible5(0)       -> true
+divisible5(10)      -> true
+divisible5(99)      -> false
+*/
+
+function divisible5(number) {
+    if (number % 5 === 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+console.log(divisible5(7));
+console.log(divisible5(0));
+console.log(divisible5(10));
+
+//OR 
+
+function divisible5(number){
+    return number % 5 === 0;
+}
+console.log(divisible5(7));
+console.log(divisible5(0));
+console.log(divisible5(10));
+
+
+/*
+Write a function called fooBar which takes a number and return a string or a number.
+if the given number is divisible by 5 -> return 'foo'
+if the given number is divisible by 7 -> return 'bar'
+if the given number is divisible both by 5 and 7 -> return 'foobar'
+if the numbers is not divisible by 5 or 7 -> return the same number back
+
+fooBar(2)   -> 2
+fooBar(3)   -> 3
+fooBar(5)   -> 'foo'
+fooBar(10)  -> 'foo'
+fooBar(14)  -> 'bar'
+forBar(0)   -> 'foobar'
+fooBar(35)  -> 'foobar'
+fooBar(70)  -> 'foobar'
+*/
+
+
+function fooBar(value) {
+    if (value % 5 === 0 && value % 7 === 0) {
+        return 'foobar'
+    }
+    else if (value % 7 === 0) {
+        return 'bar';
+    }
+    else if (value % 5 === 0) {
+        return 'foo';
+    }
+    else {
+        return value;
+    }
+
+}
+
+
+// OR 
+
+const fooBar = number1 =>{
+    return number1 % (5 * 7) === 0 ? 'foobar' : number1 % 5 === 0 ? 'foo' : number1 % 7 === 0 ? 'bar' : number1
+}
+console.log(fooBar(2));
+console.log(fooBar(3));
+console.log(fooBar(5));
+console.log(fooBar(10));
+console.log(fooBar(14));
+console.log(fooBar(0));
+console.log(fooBar(35));
+console.log(fooBar(70));
+
+// TASK 1
+
+console.log('I start to practice "JavaScript" today, and I like it.');
+console.log('The secret of getting ahead is getting started.');
+console.log('"Don\'t limit yourself. "');
+console.log('Invest in your dreams. Grind now. Shine later.');
+console.log("It's not the load that breaks you down, it's the way you carry it.");
+console.log('The hard days are what make you stronger.');
+console.log('You can waste your lives drawing lines. Or you can live your life crossing them.');
+
+
+// TASK 2
+
+console.log('\tJavaScript is a high-level programming language primarily used to \nbuild web applications. It is not limited to the web; it can also be used \nfor the backend development with technologies like Node.js.\n\n\tIt is open source and has a huge community support, which means \nthere are plenty of resources and support available for learning. It \nuses a syntax like other programming languages and easy to learn'
+)
+
+// TASK 3
+
+let myAge = 34;
+let myFavoriteNumber = 13;
+let myHeight = 1.84;
+let myWeight = 104;
+let myFavoriteLetter = 'F';
+
+console.log('My Age:' + myAge);
+console.log('My Favorite Number:' + myFavoriteNumber);
+console.log('My Height:' + myHeight);
+console.log('My Height:' + myWeight);
+console.log('My Favorite Letter:' + myFavoriteLetter);
+
+// TASK 4
+
+let num1 = 25;
+let num2 = 35;
+
+console.log('The sum of the number = ' + (num1 + num2));
+
+// TASK 5
+
+let n1 = 5;
+let n2 = 7;
+
+console.log('The product of the number = ' + (n1 * n2));
+
+// TASK 6
+
+let number1 = 24;
+let number2 = 10;
+
+console.log('The sum of the number = ' + (number1 + number2));
+console.log('The product of the number = ' + (number1 * number2));
+console.log('The subtraction of the number = ' + (number1 - number2));
+console.log('The division of the number = ' + (number1 / number2));
+console.log('The remainder of the number = ' + (number1 % number2));
+
+// TASK 7
+
+let i1 = 7;
+let i2 = 11;
+
+console.log('The average of the numbers is: '+(i1 + i2)/2);
+
+// TASK 8
+
+let a1 = 6;
+let a2 = 10;
+let a3 = 12;
+let a4 = 15;
+let a5 = 17;
+
+console.log('The average of the numbers is: '+((a1 + a2 + a3 + a4 + a5)/5));
+
+// TASK 9
+
+let b1 = 5;
+let b2 = 6;
+let b3 = 10;
+
+console.log('The ' + b1 + ' multiplied with ' + b1 + ' is = ' + (b1 ** 2));
+console.log('The ' + b2 + ' multiplied with ' + b2 + ' is = ' + (b2 ** 2));
+console.log('The ' + b3 + ' multiplied with ' + b3 + ' is = ' + (b3 ** 2));
+
+// TASK 10
+
+let side = 7;
+
+console.log('The perimeter of the square = ' + (side * 4));
+console.log('The area of the square = ' + (side * side));
+
+// TASK 11
+
+let favBook = 'JS Algorithms & Data Structures';
+let favColor = 'Blue';
+let favNumber = 7;
+
+console.log('The favorite book is ' + favBook + '\nThe favorite color is ' + favColor + '\nThe favorite number is ' + favNumber);
+
+// TASK 12
+
+let firstName = 'John';
+let lastName = 'Doe';
+let age = 45;
+let emailAddress = 'johndoe@gmail.com';
+let phoneNumber = '(123) 123 1234';
+let address = '123 st Chicago IL 12345';
+
+console.log('\tUser who joined this program is ' + firstName + ' ' + lastName + '. ' + firstName + '`s age is ' + age + '.' + '\n' + firstName + '`s email address is ' + emailAddress + ', phone number is  ' + '\n' + phoneNumber + ', and address is ' + address + '.');
+
+
+// TASK 1 
+
+let str1 = 5, str2 = 2;
+
+console.log(`The sum of ${str1} and ${str2} is = ${(str1 + str2)}`);
+console.log(`The product of ${str1} and ${str2} is = ${(str1 * str2)}`);
+console.log(`The division of ${str1} and ${str2} is = ${(str1 / str2)}`);
+console.log(`The subtraction of ${str1} and ${str2} is = ${(str1 - str2)}`);
+console.log(`The remainder of ${str1} and ${str2} is = ${(str1 % str2)}`);
+console.log(`The exponentiation of ${str1} and ${str2} is = ${(str1 ** str2)}`);
+
+// TASK 2
+
+let s1 = 200, s2 = -50;
+
+console.log(`The greatest value is = ` + Math.max(s1, s2));
+console.log(`The smallest value is = ` + Math.min(s1, s2));
+console.log(`The average is = ` + (s1 + s2)/2);
+console.log(`The absolute differance is = ` + Math.abs(s1 - s2));
+
+// TASK 3
+
+let start = 1;
+let end = 50;
+
+let num1 = Math.floor(Math.random() * (end - start + 1)) + start;
+let num2 = Math.floor(Math.random() * (end - start + 1)) + start;
+
+console.log(`The absolute difference between numbers is = ` + Math.abs(num1 - num2));
+
+// TASK 4
+
+let strts = 1;
+let ends = 50;
+
+let n1 = Math.floor(Math.random() * (ends - strts + 1)) + strts;
+let n2 = Math.floor(Math.random() * (ends - strts + 1)) + strts;
+let n3 = Math.floor(Math.random() * (ends - strts + 1)) + strts;
+let n4 = Math.floor(Math.random() * (ends - strts + 1)) + strts;
+let n5 = Math.floor(Math.random() * (ends - strts + 1)) + strts;
+
+/*
+console.log(n1);
+console.log(n2);
+console.log(n3);
+console.log(n4);
+console.log(n5);
+*/
+
+console.log(`The max value = ` + Math.max(n1, n2, n3, n4, n5));
+console.log(`The min value = ` + Math.min(n1, n2, n3, n4, n5));
+
+// TASK 5
+
+let startNum = 50;
+let endNum = 100;
+
+let number1 = Math.floor(Math.random() * (endNum - startNum + 1)) + startNum;
+let number2 = Math.floor(Math.random() * (endNum - startNum + 1)) + startNum;
+let number3 = Math.floor(Math.random() * (endNum - startNum + 1)) + startNum;
+
+console.log(`The number 1 = ${number1}`);
+console.log(`The number 2 = ${number2}`);
+console.log(`The number 3 = ${number3}`);
+console.log(`The sum of numbers is = ${number1 + number2 + number3}`);
+
+// TASK 6
+
+let sNumber = 1;
+let eNumber = 100;
+let greater = 25;
+
+let numberOne = Math.floor(Math.random() * (eNumber - sNumber + 1)) + sNumber;
+let numberTwo = Math.floor(Math.random() * (eNumber - sNumber + 1)) + sNumber;
+let numberThree = Math.floor(Math.random() * (eNumber - sNumber + 1)) + sNumber;
+
+/*
+console.log(numberOne);
+console.log(numberTwo);
+console.log(numberThree);
+*/
+
+console.log(numberOne > greater && numberTwo > greater && numberThree > greater);
+
+// TASK 7
+
+let name = 'David';
+
+console.log(`The length of the name is = ${(name.length)}`);
+console.log(`The last character in the name is = ${(name.at(-1))}`);
+console.log(`The first 3 characters in the name are = ${(name.slice(0, 3))}`)
+console.log(`The first 3 characters in the name are = ${(name.slice(name.length - 3))}`)
+
+const { getRandomNumber } = require('./../utils/MathHelper.js')
+// TASK 1
+
+num1 = getRandomNumber(1, 100);
+num2 = getRandomNumber(1, 100);
+num3 = getRandomNumber(1, 100);
+
+console.log((num1 + num2 + num3) / 3 <= 50)
+
+/*
+console.log(num1);
+console.log(num2);
+console.log(num3);
+*/
+
+// TASK 2
+
+number1 = getRandomNumber(1, 3);
+number2 = getRandomNumber(1, 3);
+number3 = getRandomNumber(1, 3);
+
+function match(number1, number2, number3) {
+    if (number1 === number2 && number2 === number3) {
+        return 'TRIPLE MATCH';
+    }
+    else if (number1 === number2 || number1 === number3 || number2 === number3) {
+        return 'DOUBLE MATCH';
+    }
+    else {
+        return 'NO MATCH';
+    }
+}
+/*
+console.log(match(number1, number2, number3));
+console.log(number1);
+console.log(number2);
+console.log(number3);
+*/
+
+//TASK 3
+
+function hasA(string) {
+    return /^a/i.test(string);
+}
+/*
+console.log(hasA("arda"));
+console.log(hasA("Tech"));
+console.log(hasA("Global"));
+console.log(hasA(""));
+console.log(hasA("Apple"));
+*/
+
+
+// TASK 4
+
+function doubleOrTripleWord(string) {
+    if (string.length % 2 === 0){
+        return (`"${string+string+string}"`);
+    }
+
+    else if (string.length % 2 === 1 && /[1-9a-zA-Z]/.test(string)) {
+        return (`"${string+string}"`);
+    }
+    else {
+        return `"${string}"`;
+    }
+}
+/*
+console.log(doubleOrTripleWord("Tech"));
+console.log(doubleOrTripleWord("Apple"));
+console.log(doubleOrTripleWord(""));
+console.log(doubleOrTripleWord(" "));
+console.log(doubleOrTripleWord("1"));
+console.log(doubleOrTripleWord("22"));
+*/
+
+
+// TASK 5
+
+function firstWord(string) {
+    if (/[a-zA-Z]/.test(string)){
+    return (string.trim().split(/\s+/).find(word =>/[a-zA-Z]/.test(word))); 
+    }
+    else {
+        return `"${""}"`;
+    }
+}
+/*
+console.log(firstWord("  I   have     pen"))
+console.log(firstWord("55555 my phone number"))
+console.log(firstWord("Hello World"));
+console.log(firstWord("I like JavaScript"));
+console.log(firstWord("Hello"));
+console.log(firstWord(""));
+console.log(firstWord(" "));
+*/
+
+
+// TASK 6
+
+function lastWord(string) {
+    if (/[a-zA-Z]/.test(string)){
+    return (string.trim().split(/\s+/).findLast(word =>/[a-zA-Z]/.test(word))); 
+    }
+    else {
+        return `"${""}"`;
+    }
+}
+/*
+console.log(lastWord("  I   have     pen"))
+console.log(lastWord("my phone number 5555"))
+console.log(lastWord("Hello World"));
+console.log(lastWord("I like JavaScript"));
+console.log(lastWord("Hello"));
+console.log(lastWord(""));
+console.log(lastWord(" "));
+*/
+
+
+// TASK 7
+
+function fLastWord(string) {
+    if (/[a-zA-Z]/.test(string)){
+        return ((string.trim().split(/\s+/).find(word =>/[a-zA-Z]/.test(word)))+(string.trim().split(/\s+/).findLast(word =>/[a-zA-Z]/.test(word)))); 
+    }
+    else {
+        return `"${""}"`;
+    }
+}
+/*
+console.log(fLastWord("  I   have     pen"))
+console.log(fLastWord("5555  my phone number 5555"))
+console.log(fLastWord("Hello World"));
+console.log(fLastWord("I like JavaScript"));
+console.log(fLastWord("Hello"));
+console.log(fLastWord(""));
+console.log(fLastWord(" "));
+*/
+
+// TASK 8
+
+function startVowel (string) {
+    return /^[aeiou]/i.test(string)
+}
+/*
+console.log(startVowel("Hello"));
+console.log(startVowel("Apple"));
+console.log(startVowel("orange"));
+console.log(startVowel(""));
+console.log(startVowel(" "));
+console.log(startVowel("123"));
+*/
+
+
+// TASK 9
+
+function swap4(string) {
+    if (string.trim(/\s+/).length >= 8) {
+        let frst = string.slice(0, 4);
+        let middle = string.slice(4, string.length - 4);
+        let lst = string.slice(string.length - 4, string.length);
+        return (lst + middle + frst)
+    }
+    else {
+        return "";
+    }
+}
+
+/*
+console.log(swap4("abc"));
+console.log(swap4("JavaScript"));
+console.log(swap4("TechGlobal"));
+console.log(swap4(""));
+console.log(swap4("  "));
+console.log(swap4("Apple"));
+console.log(swap4("          ")); 
+*/
+
+// TASK 10
+
+function swapFirstLastWord(string) {
+    string = string.replace(/\s+/g, " ").trim();
+    if (string.indexOf(' ') > 0) {
+        let frst = string.slice(0, string.indexOf(' '));
+        let lst = string.slice(string.lastIndexOf(' ') + 1);
+        let middle = string.slice(string.indexOf(' '), string.lastIndexOf(' ') + 1);
+        return lst + middle + frst;
+    }
+    else {
+        return "''";
+    }
+}
+/*
+console.log(swapFirstLastWord("      I like     JavaScript      "));
+console.log(swapFirstLastWord("Hello World"));
+console.log(swapFirstLastWord("I like JavaScript"));
+console.log(swapFirstLastWord("foo bar foo bar"));
+console.log(swapFirstLastWord(""));
+console.log(swapFirstLastWord("    "));
+console.log(swapFirstLastWord("Hello"));
+console.log(swapFirstLastWord("Hello   "));
+*/
+
+/*
+Task01
+
+Requirement:
+Write a program that extracts expected values from a given String using JS 
+String functions.
+
+"I like apples and oranges"  -> "APPLE"
+"JavaScript is not a scripting programming language"   -> "JavaScript"
+"I don't like books"  -> "I like books"
+*/
+
+let str1 = "I like apples and orange";
+let str2 = "JavaScript is not a scripting programming language";
+let str3 = "I don't like books";
+
+console.log(str1.slice(7, 12).toUpperCase());
+console.log(str2.slice(0, 10));
+console.log(str3[0] + str3.slice(7));
+// Or
+console.log(str3.replace("don't ",''));
+
+
+
+/*
+Task02
+
+Requirement:
+Assume that you are given a String of any length. 
+Find:
+-The length of the String
+-First char in the String
+-Last char in the String
+-Check if the String contains any vowel letters 
+-if it has any vowel, then print true
+-Else, print false
+Vowels = a, e, i, u, o, A, E, I, U, O
+
+Test Data 1: let s1 = "JavaScript";
+Expected Result 1:
+The length is = 10
+The first char is = J
+The last char is = t
+true
+
+Test Data 2: let s1 = "";
+Expected Result 2:
+The length is = 0
+The first char is = undefined
+The last char is = undefined
+false
+*/
+
+let s1 = "JavaScript"
+
+console.log('The length is = ' + s1.length);
+console.log('The first char is = ' + s1.at(0));
+console.log('The last char is = ' + s1.at(-1));
+/*
+s1 = s1.toLowerCase();
+let hasVowel = s1.includes('a') || s1.includes('e') || s1.includes('i') || s1.includes('u') || s1.includes('o')
+*/
+let hasVowel = /[aeiouAEIOU]/i.test(s1);
+console.log(hasVowel);
+
+
+/*
+Task03
+
+Requirement:
+Assume that you are given a String of any odd length. 
+Find the middle character for the given String. 
+
+Test Data 1: let s2 = "x";
+Expected Result 1: "x"
+
+Test Data 2: let s2 = "abc";
+Expected Result 2: "b"
+
+Test Data 3: let s2 = "civic";
+Expected Result 3: "v"
+*/
+
+let s2 = "civici";
+
+console.log(s2[(s2.length-  1 )/2]);
+
+
+/*
+Task04
+
+Requirement:
+Assume that you are given a String of any even length including empty. 
+Find the middle 2 characters for the given String. 
+
+Test Data 1: let s3 = "";
+Expected Result 1: ""
+
+Test Data 2: let s3 = "abcd";
+Expected Result 2: "bc"
+
+Test Data 3: let s3 = "JavaScript";
+Expected Result 3: "Sc"
+
+
+Toyota -> yo
+*/
+
+let s3 = 'JavaScript';
+console.log(s3[(s3.length)/2-1]+s3[(s3.length)/2]);
+
+// Teacher's solution
+
+let str = 'JavaScript'
+console.log(str.slice(str.length / 2 - 1, str.length / 2 + 1));
+
+/*
+Task05
+
+Requirement:
+Write a program that divides the given String. Assume the length of the 
+String will at least be 4.
+-Find and print the first two characters
+-Find and print the last two characters 
+-Find and print all the middle characters other than first and last 2 characters
+
+Test Data 1: let s4 = "abcd";
+Expected Result 1:
+The first 2 characters are = ab
+The last 2 characters are = cd
+The other characters are = ''
+
+Test Data 2: let s4 = "JavaScript";
+Expected Result 2:
+The first 2 characters are = Ja
+The last 2 characters are = pt
+The other characters  are = vaScri
+*/
+
+let s4 = 'JavaScript';
+
+console.log(`The first 2 characters are = ${s4.slice(0,2)}`);
+console.log(`The last 2 characters are = ${s4.slice(-2)}`);
+console.log(`The other characters are = ${s4.slice(2, -2)}`);
+
+/*
+Task06
+
+Requirement:
+Assume that you are given a String that has at least 2 characters. 
+If first 2 and last 2 characters are same, then print true. Otherwise, print 
+false.
+
+Test Data 1: let s5 = "ab";;
+Expected Result 1: true
+
+Test Data 2: let s5 = "abcd";
+Expected Result 2: false
+
+Test Data 3: let s5 = "12ab12";;
+Expected Result 1: true
+
+Test Data 4: let s5 = "JavaScript";
+Expected Result 4: false
+*/
+
+let s5 = '12ab12';
+
+console.log(s5.slice(0,2) === s5.slice(-2));
+
+/*
+Task07
+
+Requirement:
+Write a program that gets rid of first and last characters of given two String values. 
+Then, add these two String values to each other and print the result. 
+
+Test Data 1:
+let s61 = "orange";
+let s62 = "6";
+Expected Result 1: rang
+
+Test Data 2:
+let s61 = "1234";
+let s62 = "Green";
+Expected Result 2: 23ree
+
+Test Data 3:
+let s61 = "123456";
+let s62 = "Blue";
+Expected Result 3: 2345lu
+
+Test Data 4:
+let s61 = "Yellow";
+let s62 = "Red";
+Expected Result 4: elloe
+*/
+
+let s61 = 'Yellow';
+let s62 = 'Red';
+
+console.log(s61.slice(1, (s61.length-1)) + s62.slice(1, (s62.length-1)) );
+console.log(`${s61.slice(1, (s61.length-1))}${s62.slice(1, (s62.length-1))}`);
+// Teacher's Solution
+
+console.log(s61.slice(1, -1) + s62.slice(1, -1));
+
+
+
+
+/*
+Task08
+
+Requirement:
+Write a program that checks if a given String starts and ends with xx. 
+-If given String starts and ends with xx, then print true. 
+-Otherwise, print false
+
+Test Data 1: let s7 = "";
+Expected Result 1: false
+
+Test Data 2: let s7 = "red";
+Expected Result 2: false
+
+Test Data 3: let s7 = "green";
+Expected Result 3: false
+
+Test Data 4: let s7 = "xxbluexx";
+Expected Result 4: true
+*/
+
+let s7 = 'xxbluexx';
+
+console.log( s7.slice(0,2) === 'xx' && s7.slice(-2) === 'xx');
+//or
+console.log(s7.startsWith('xx') && s7.endsWith('xx'));
+
+/*
+Task09
+
+Requirement:
+Write a program that swaps the first and last word of a given sentence as a String. 
+
+Test Data 1: let s8 = "";
+Expected Result 1: ""
+
+Test Data 2: let s8 = " ";
+Expected Result 2: " "
+
+Test Data 3: let s8 = "I like Apple";
+Expected Result 3: "Apple like I"
+
+Test Data 4: let s8 = "JavaScript is nice to learn";
+Expected Result 4: "learn is nice to JavaScript"
+*/
+
+let s8 = 'JavaScript is nice to learn';
+
+let first = s8.slice(0, s8.indexOf(' '));
+let last = s8.slice(s8.lastIndexOf(' ')+1);
+let middle = s8.slice(s8.indexOf(' '), s8.lastIndexOf(' ') + 1);
+
+console.log(last + middle + first);
+
+
+/*
+Task10
+
+Requirement:
+Write a program that counts the number of words in a given sentence as a String. 
+Assume you will not be given redundant whitespaces and at least one word.
+
+Test Data 1: let s9 = " Good morning";
+Expected Result 1: 2
+
+Test Data 2: let s9 = "Hello    ";
+Expected Result 2: 1
+
+Test Data 3: let s9 = "I like Apple";
+Expected Result 3: 3
+
+Test Data 4: let s9 = "JavaScript is nice to learn";
+Expected Result 4: 5
+
+
+ReqEx  -> Regular Expressions
+*/
+
+let s9 = " Good        morning     ";
+console.log(s9.trim().split(/\s+/)); // /\s+/ many numbers of  --- s means space
+
+
+/*
+
+Task01
+
+Requirement:
+
+Write a function named as tripleWord() which takes a string word as an argument and returns the given word back tripled when invoked.
+
+NOTE: Assume you will not be given an empty word.
+
+Examples:
+
+tripleword("Tech") -> "TechTechTech"
+
+tripleWord("Global") -> "GlobalGlobalGlobal"
+
+*/
+
+const tripleWord = word => {
+    return word + word + word
+}
+
+console.log(tripleWord('Tech'));
+
+// Or
+
+const tripleWord2 = word => {
+    return word.repeat(3)
+}
+
+console.log(tripleWord2('Tech'));
+
+/*
+Write a function named as has4() which takes a string word as an argument and returns true if given string has at least 4 characters, and false otherwise when invoked.
+ Examples:
+has4("Tech")  -> true
+has4("Global")  -> true
+has4("")  -> false
+has4("12345")  -> true
+has4("abc")   -> false
+*/
+
+function has4(word) {
+    return word.length >= 4;
+}
+
+console.log(has4('hey'));
+console.log(has4('Tech'));
+console.log(has4('Global'));
+console.log(has4(''));
+console.log(has4('12345'));
+console.log(has4('abc'));
+
+
+
+// Or
+
+const has4 = word => {
+    return word.length >= 4;
+}
+
+console.log(has4('hey'));
+console.log(has4('Tech'));
+console.log(has4('Global'));
+console.log(has4(''));
+console.log(has4('12345'));
+console.log(has4('abc'));
+
+/*
+Write a function named as celciusToFahrenheit() which takes a number
+to be considered as Celcius value and returns the Fahrenheit value when
+invoked.
+Conversion Formula: The function uses the formula (celsius * 9) / 5 + 32
+to perform the conversion from Celsius to Fahrenheit.
+•Multiply the Celsius temperature by 9.
+•Divide the result by 5.
+•Add 32 to the result.
+Examples:
+celciusToFahrenheit(20)  -> 68
+celciusToFahrenheit(25)  -> 77
+celciusToFahrenheit(0)  -> 32
+celciusToFahrenheit(-10)  -> 14
+*/
+
+const celciusToFahrenheit = degree => {
+    return ((degree * 9) / 5 + 32);
+}
+
+console.log(celciusToFahrenheit(20));
+console.log(celciusToFahrenheit(25));
+console.log(celciusToFahrenheit(0));
+console.log(celciusToFahrenheit(-10));
+
+// Or
+
+function celsiusToFahrenheit (celsius) {
+    return (celsius * 9) / 5 + 32;
+}
+
+console.log(celsiusToFahrenheit(20));
+console.log(celsiusToFahrenheit(25));
+console.log(celsiusToFahrenheit(0));
+console.log(celsiusToFahrenheit(-10));
+
+/*
+Write a function named as kgToPounds() which takes a number to be
+considered as Kilograms value and returns the Pounds value when
+invoked.
+Conversion Formula: The function uses the formula kilogram * 2.2 to
+perform the conversion from Kilograms to Pounds.
+•Multiply the Kilograms value by 2.2.
+Examples:
+kgToPounds(1)  -> 2.2
+kgToPounds(20)  -> 44
+kgToPounds(75)  -> 165
+kgToPounds(100)  -> 220
+*/
+
+function kgToPound (kilogram) {
+    return Math.round(kilogram * 2.2 * 10) / 10;
+}
+
+console.log(kgToPound(1));
+console.log(kgToPound(20));
+console.log(kgToPound(75));
+console.log(kgToPound(100));
+
+
+// Or ( Above is better because i made it :D )
+
+const kgToPounds = kg => {
+let pounds = (kg * 2.2).toFixed(1);
+
+let poundsAsStr = pounds + ""
+
+let poundsSplit = poundsAsStr.split('.');
+
+if (poundsSplit [1] == 0) pounds = poundsSplit [0]
+
+return pounds;
+}
+console.log(kgToPounds(1));
+console.log(kgToPounds(20));
+console.log(kgToPounds(75));
+console.log(kgToPounds(100));
+
+/*
+Write 2 functions named as rectangleArea() and rectanglePerimeter()
+which calculate the area and perimeter of a rectangle when invoked.
+NOTE: Assume the sides of the rectangle are x and y.
+Conversion Formula:
+•Area: x * y
+•Perimeter 2 * (x + y)
+Examples:
+rectangleArea(5, 4)  -> 20
+rectangleArea(3, 7)  -> 21
+rectangleArea(6, 10)  -> 60
+rectanglePerimeter(5, 4)  -> 18
+rectanglePerimeter(3, 7)  -> 20
+rectanglePerimeter(6, 10)  -> 32
+*/
+
+function rectangleArea (sd1, sd2) {
+    return sd1 * sd2;
+}
+function rectangleParimeter (sd1, sd2) {
+    return (sd1 + sd2) * 2;
+}
+console.log(rectangleArea(5, 4));
+console.log(rectangleArea(3, 7));
+console.log(rectangleArea(6, 10));
+console.log(rectangleParimeter(5, 4));
+console.log(rectangleParimeter(3, 7));
+console.log(rectangleParimeter(6, 10));
+
+/*
+Write 2 functions named as squareArea() and squarePerimeter() which
+calculate the area and perimeter of a square when invoked.
+NOTE: Assume the side of the square is x.
+Conversion Formula:
+•Area: x * x
+•Perimeter 4 * x
+Examples:
+squareArea(5)  -> 25
+squareArea(3)  -> 9
+squareArea(6)  -> 36
+squarePerimeter(5)  -> 20
+squarePerimeter(3)  -> 12
+squarePerimeter(6)  -> 24
+*/
+function quareArea(sd1) {
+    return sd1 * sd1;
+}
+function squarePerimeter (sd1) {
+    return (sd1 * 4);
+}
+console.log(quareArea(5));
+console.log(quareArea(3));
+console.log(quareArea(6));
+console.log(squarePerimeter(5));
+console.log(squarePerimeter(3));
+console.log(squarePerimeter(6));
+
+
+
+/*
+Write a function named as countWords() which takes a String and returns
+the number of words that are in the string
+countString("Hello, my name is John Doe") -> 6
+*/
+
+const countString = str => {
+    let strAsArr = str.split(/\s+/)
+    return strAsArr;
+}
+console.log(countString("Hello, my name is John Doe").length);
+
+// or Volkan's way
+function countstr (word) {
+    return word.split(/\s+/);
+}
+
+console.log(countstr('Hello,    my name     is John Doe').length);
+
+
+
+const { getRandomNumber } = require('./../utils/MathHelper.js');
+/*
+Task01
+
+Requirement:
+Assume you are given 2 numbers to be 0 or 1.
+Print true if they are same number.
+Otherwise, print false
+
+Test data 1: 0, 1
+Expected result 1: false
+
+Test data 2: 0, 0
+Expected result 2: true
+
+Test data 3: 1, 0
+Expected result 3: false
+
+Test data 4: 1, 1
+Expected result 4: true
+*/
+
+let num1 = getRandomNumber(0, 1);
+let num2 = getRandomNumber(0, 1);
+
+if (num1 === num2){
+    console.log(true);
+}
+else {
+    console.log(false);
+}
+
+// Or just
+
+console.log(num1 === num2);
+
+/*
+Task02
+
+Requirement:
+Assume you are given a single character.
+Find if the given character is a letter or digit.
+NOTE: if the character is not a letter or digit, print "INVALID INPUT"
+
+Test data 1: "v"
+Expected result 1:
+"v"  is a letter
+
+Test data 2: "5"
+Expected result 2:
+"5"  is a digit
+
+Test data 3: "$"
+Expected result 3:
+INVALID INPUT
+*/
+// aski table dan bakltik. her karakterin bit codu uzerinden yaptik
+let char2 = '$' ;
+let char2code = char2.charCodeAt(0);
+
+if(char2code>= 48 && char2code <= 57) {
+    console.log(`"${char2}" is a digit`);
+}
+else if ((char2code >= 65 && char2code <= 90) || (char2code >= 97 && char2code <= 122)) {
+    console.log(`"${char2}" is a letter`);
+}
+else {
+    console.log('INVALID INPUT');
+}
+
+
+/*
+Task03
+
+Requirement:
+Assume you are given a single character.
+Find if the given character is a lowercase or an 
+uppercase letter.
+NOTE: if the character is not a letter, print "INVALID INPUT"
+
+Test data 1: "a"
+Expected result 1:
+"a" is a lowercase letter
+
+Test data 2: "5"
+Expected result 2:
+"INVALID INPUT"
+
+Test data 2: "N"
+Expected result 1:
+"N" is an uppercase letter
+
+Test data 4: " "
+Expected result 4:
+"INVALID INPUT"
+*/
+
+let char3 = '5';
+let char3code = char3.charCodeAt(0);
+
+if (char3code >= 65 && char3code <= 90) {
+    console.log(`"${char3}" is a uppercase letter`);
+}
+
+else if (char3code >= 97 && char3code <= 122) {
+    console.log(`"${char3}" is a lowercase letter`);
+}
+else {
+    console.log("INVALID INPUT");
+}
+
+/*
+Task04
+
+Requirement:
+Assume you are given a single character.
+Find if the given character is a special character or not.
+Special character: except space, letters, digits
+
+Test data 1: "a"
+Expected result 1:
+"a" is not a special 
+character
+
+Test data 2: "5"
+Expected result 2:
+"5" is not a special 
+character
+
+Test data 3: "$"
+Expected result 3:
+"$"  is a special character
+
+Test data 4: " "
+Expected result 4:
+" " is not a special character
+*/
+
+let char4 = '1';
+let char4code = char4.charCodeAt(0);
+
+if ((char4code >= 33 && char4code <= 47) || (char4code >= 58 && char4code <= 64) || (char4code >= 91 && char4code <= 96) || (char4code >= 123 && char4code <= 127))  {
+    console.log(`"${char4}" is a special character`);
+}
+
+else {
+    console.log(`"${char4}" is not a special character`);
+}
+
+/*
+Task05
+
+Requirement:
+Assume you are given a single character.
+Find if the given character is a vowel or not.
+NOTE: if the character is not a letter, print "INVALID INPUT"
+NOTE: Vowel letters: a, e, i o, u, A, E, I, O, U 
+
+Test data 1: "a"
+Expected result 1:
+"a" is a vowel
+
+Test data 2: "5"
+Expected result 2:
+"INVALID INPUT"
+
+Test data 2: "N"
+Expected result 1:
+"N"  is not a vowel
+
+Test data 4: " "
+Expected result 4:
+"INVALID INPUT"
+*/
+
+let char5 = 'b';
+let char5code = char5.charCodeAt(0);
+if ((char5code >= 65 && char5code <= 90) || (char5code >= 97 && char5code <= 122)) {
+    if ('aeiouAEIOU'.includes(char5)){
+        console.log(`"${char5}" is a vowel`)
+    }
+    else {
+        console.log(`"${char5}" is not a vowel`)
+    }
+}
+else {
+    console.log('INVALID INPUT')
+}
+
+// variable hoistings
+
+
+console.log(x);// ReferenceError: Cannot access 'x' before initialization
+
+var x = 5;
+
+
+// function hoisting
+
+
+
+const sayHi = function sayHi() {
+console.log('Hi');
+
+}
+sayHi();
+sayHi();
 
