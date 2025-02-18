@@ -1,2 +1,3 @@
-pushing code: pulbishing the code
-pulling code: retrieving the code
+pushing code: pulbishing/sharing your code with others
+pulling code: retrieving/getting others code into ypur local
+
