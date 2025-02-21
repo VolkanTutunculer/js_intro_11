@@ -65,9 +65,9 @@ console.log(reverseString("volkan"));
 
 
 
-let r1 = Math.floor(Math.random() * 50) + 1; ======> random number
+let r1 = Math.floor(Math.random() * 50) + 1; // random number
 
-let r1 = Math.floor(Math.random() * 50) + 1;
+let r2 = Math.floor(Math.random() * 50) + 1;
 console.log(r1);
 console.log(r1 % 7 === 0);
 
@@ -138,3 +138,17 @@ function reverseString(str){
 
 console.log(reverseString("volkan"));
 
+
+let name = 'volkan';
+const bornDate = 1991;
+let adress = '398  street';
+function numberOfPets(num){
+    return num+1;
+}
+function firtsLetter(str) {
+    return str[0];
+}
+
+console.log(`my name is ${name} and my age is ${new Date().getFullYear()-bornDate}.`);
+console.log(`my adress is ${adress.toUpperCase()} and \ni have  ${numberOfPets(1)} pets`);
+console.log(firtsLetter("volkan"));
