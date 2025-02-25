@@ -152,3 +152,25 @@ function firtsLetter(str) {
 console.log(`my name is ${name} and my age is ${new Date().getFullYear()-bornDate}.`);
 console.log(`my adress is ${adress.toUpperCase()} and \ni have  ${numberOfPets(1)} pets`);
 console.log(firtsLetter("volkan"));
+console.log(`my name is \'${name}'`);
+const todaysDate = new Date().getFullYear()
+console.log(todaysDate);
+
+
+let newLaptop ={
+    brand : 'Dell',
+    Model : 'G 16',
+    graphicCard : 'Nvidia',
+}
+newLaptop.graphicCard = 'Nvidia RTX 4060';
+console.log(newLaptop);
+
+
+const numbers = [5, 7, 12, 15];
+
+console.log(numbers[0]);
+console.log(numbers[numbers.length - 1]);
+console.log(numbers[0] + numbers[numbers.length - 1]);
+console.log((numbers[0] + numbers[numbers.length - 1]) / 2);
+let averg = ((numbers[0]+numbers[numbers.length -1])/2)
+console.log(averg);
