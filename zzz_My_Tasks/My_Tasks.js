@@ -174,3 +174,21 @@ console.log(numbers[0] + numbers[numbers.length - 1]);
 console.log((numbers[0] + numbers[numbers.length - 1]) / 2);
 let averg = ((numbers[0]+numbers[numbers.length -1])/2)
 console.log(averg);
+
+let num = 123.456
+
+console.log(num.toFixed(2));
+
+
+let number1 = 25;
+let number2 = 35;
+let number3 = 45;
+
+let big = Math.max(number1, number2, number3);
+console.log(big);
+
+let listNum = [1,5,77,43,24]
+
+console.log(Math.max(...listNum));
+
+
