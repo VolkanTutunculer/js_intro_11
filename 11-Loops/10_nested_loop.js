@@ -29,3 +29,16 @@ for (let i = 1; i <= 3; i++) {
     }
 }
 console.log(count);
+
+
+
+let sum=0;
+for (let i=5; i<=10; i++){
+    sum +=i;
+    for(let j=2; j<=i; j++) {
+        sum +=j;
+        if (j === 4) break;
+    }
+    if (sum >= 25) break;
+}
+console.log(sum);
