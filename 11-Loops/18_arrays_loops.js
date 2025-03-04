@@ -22,3 +22,20 @@ for (const num of nums){
 }
 
 console.log(firstEvenNum2);
+
+
+
+// Find the first city that has the odd length  -> Chicago
+const cities = ['Berlin', 'Rome', 'Chicago', 'Kyiv', 'Istanbul', 'Tokyo'];
+
+let firstOddCity ;
+
+for (const city of cities){
+    if (city.length % 2 !== 0){
+        firstOddCity = city;
+        break;
+    }
+}
+
+console.log(firstOddCity);
+
