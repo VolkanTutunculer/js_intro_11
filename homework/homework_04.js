@@ -298,11 +298,6 @@ function fizzBuzz(num1, num2) {
 
         else arr.push(i)
     }
-
-    if (num1 > num2) {
-        arr.reverse();
-    }
-
     return arr.join(' | ');
 }
 
