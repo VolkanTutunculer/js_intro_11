@@ -68,3 +68,39 @@ function replaceFirstLastWord(str) {
 }
 
 console.log(replaceFirstLastWord('volkan'))
+
+/*
+Write a function named as startVowel() which takes a string word as an argument and returns true if given string starts with a vowel, and false otherwise when invoked. NOTE: Vowel letters: a, e, i o, u, A, E, I, O, U
+
+Examples:
+startVowel("Hello")   	-> false
+startVowel("Apple")   	-> true
+startVowel("orange")    -> true
+startVowel("")   	    -> false
+startVowel("	")   	-> false
+startVowel("123")   	-> false
+*/
+
+function startVowel(str){
+    let vowels = ('aeiouAEIOU')
+    return vowels.includes(str[0])
+}
+console.log(startVowel("Hello"));
+
+
+function sumOfDigits(str) {
+    let sum = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == Number(str[i])) {
+            sum += Number(str[i])
+        }
+
+    }
+    return sum;
+}
+
+
+console.log(sumOfDigits("Javascript"));
+console.log(sumOfDigits("John's age is 29"));
+console.log(sumOfDigits("$125.0"));
+console.log(sumOfDigits(""));
