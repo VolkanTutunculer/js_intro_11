@@ -17,7 +17,7 @@ firstDuplicate([ 'foo', 'abc', '123', 'bar' ])  -> -1
 */
 
 //nested loop
-const firstDuplicate = arr => {
+const firstDuplicate1 = arr => {
     for(let i = 0; i < arr.length - 1; i++){
         for(let j = i + 1; j < arr.length; j++){
             if(arr[i] === arr[j]) return arr[i];
@@ -26,14 +26,27 @@ const firstDuplicate = arr => {
     return -1
 }
 
+console.log(firstDuplicate1([ 3, 7, 10, 0, 3, 10 ]))
+console.log(firstDuplicate1([ 5, 7, 7, 0, 5, 10 ]))
+console.log(firstDuplicate1([ 5, '5', 3, 7, 4 ]))
+console.log(firstDuplicate1([ 123, 'abc', '123', 3, 'abc' ]))
+console.log(firstDuplicate1([ 1, 2, 3]))
+console.log(firstDuplicate1([ 'foo', 'abc', '123', 'bar' ]))
 
 //.includes
-const firstDuplicate = arr => {
+const firstDuplicate2 = arr => {
     for(let i = 0; i < arr.length; i++){
         if(arr.includes(arr[i], i + 1)) return arr[i]
     }
     return -1
 }
+
+console.log(firstDuplicate2([ 3, 7, 10, 0, 3, 10 ]))
+console.log(firstDuplicate2([ 5, 7, 7, 0, 5, 10 ]))
+console.log(firstDuplicate2([ 5, '5', 3, 7, 4 ]))
+console.log(firstDuplicate2([ 123, 'abc', '123', 3, 'abc' ]))
+console.log(firstDuplicate2([ 1, 2, 3]))
+console.log(firstDuplicate2([ 'foo', 'abc', '123', 'bar' ]))
 
 //.indexOf
 const firstDuplicate = arr => {
@@ -101,7 +114,7 @@ reverseStringWords("")  -> ""
 reverseStringWords("    ")  -> ""
 */
 
-const reverseStringWords = str => {
+const reverseStringWords1 = str => {
     let words = str.trim().split(' ');
     for(let i = 0; i < words.length ; i++){
         words[i] = words[i].split('').reverse().join('')
@@ -109,13 +122,24 @@ const reverseStringWords = str => {
     return words.join(' ');
 }
 
-const reverseStringWords = str => {
+console.log(reverseStringWords1("Hello    World"))
+console.log(reverseStringWords1("I    like    JavaScript"))
+console.log(reverseStringWords1("Hello"))
+console.log(reverseStringWords1(""))
+console.log(reverseStringWords1("    "))
+
+const reverseStringWords2 = str => {
     let words = str.trim().split(/\s+/);
     return words.map(ele => ele.split('').reverse().join(''))
 }
 
+console.log(reverseStringWords2("Hello    World"))
+console.log(reverseStringWords2("I    like    JavaScript"))
+console.log(reverseStringWords2("Hello"))
+console.log(reverseStringWords2(""))
+console.log(reverseStringWords2("    "))
 
-const reverseStringWords = str => {
+const reverseStringWords3 = str => {
     let words = str.trim().split(/\s+/);
     return words.map(word => {
         let reversedWord = '';
