@@ -1,12 +1,12 @@
 let min = 1;
 let max = 100;
 
-let randomNum = Math.floor(Math.random()*(max-min+1))+min;
+let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
 
 console.log(randomNum);
 
-function evenOrrOdd(number){
-    if (number % 2 === 0){
+function evenOrrOdd(number) {
+    if (number % 2 === 0) {
         return "EVEN";
     }
     else {
@@ -24,15 +24,15 @@ function factorial(n) {
         return 1;
     }
     else {
-        return n * factorial(n- 1);
+        return n * factorial(n - 1);
     }
 }
 
 console.log(factorial(3));
 
 
-function factor(n){
-    if (n === 0 || n=== 1){
+function factor(n) {
+    if (n === 0 || n === 1) {
         return 1;
 
     }
@@ -81,7 +81,7 @@ startVowel("	")   	-> false
 startVowel("123")   	-> false
 */
 
-function startVowel(str){
+function startVowel(str) {
     let vowels = ('aeiouAEIOU')
     return vowels.includes(str[0])
 }
