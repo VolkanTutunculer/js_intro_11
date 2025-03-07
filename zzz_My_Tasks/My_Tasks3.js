@@ -104,3 +104,79 @@ console.log(sumOfDigits("Javascript"));
 console.log(sumOfDigits("John's age is 29"));
 console.log(sumOfDigits("$125.0"));
 console.log(sumOfDigits(""));
+
+let max = 50
+let min = 1
+function randomNum(num) {
+    let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+    console.log(randomNum);
+    if (randomNum % 5 === 0) {
+        return true;
+    }
+    else {
+        return false
+    }
+}
+console.log(randomNum());
+console.log(randomNum());
+
+
+let maxNum = 50;
+let minNum = 1;
+
+function randomNum1(){
+    let radomNum = Math.floor(Math.random()*(maxNum-minNum+1))+minNum;
+    console.log(radomNum);
+    if (radomNum % 7 === 0){
+        return true;
+    }
+    else return false;
+}
+console.log(randomNum1());
+
+let min = 1;
+let max = 10;
+
+  function randomNum(){
+    let random1 = Math.floor(Math.random()*(max-min+1))+min;
+    let random2 = Math.floor(Math.random()*(max-min+1))+min;
+    let random3 = Math.floor(Math.random()*(max-min+1))+min;
+
+    console.log(random1);
+    console.log(random2);
+    console.log(random3);
+
+    let average = ((random1+random2+random3)/3);
+    return average.toFixed();
+  }
+
+  console.log(randomNum());
+
+  /*
+
+Write a function named as shorter() which takes two string words as arguments and returns the string that has less characters when invoked.
+NOTE: If both of the words have the same length, then return the second string.
+
+Examples:
+shorter("Tech", "Global")	-> "Tech"
+shorter("Hello", "Hi")		-> "Hi"
+shorter("Hello", "World")	-> "World"
+
+*/
+
+function shorter(str1, str2) {
+    let shortString = '';
+    if (str1.length < str2.length) {
+        shortString = str1;
+    }
+    else if (str1.length > str2.length) {
+        shortString = str2;
+    }
+    else shortString = str2
+    return shortString;
+}
+
+console.log(shorter("Tech", "Global"));
+console.log(shorter("Hello", "Hi"));
+console.log(shorter("Hello", "World"));
+
