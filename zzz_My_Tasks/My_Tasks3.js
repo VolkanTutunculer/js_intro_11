@@ -124,10 +124,10 @@ console.log(randomNum());
 let maxNum = 50;
 let minNum = 1;
 
-function randomNum1(){
-    let radomNum = Math.floor(Math.random()*(maxNum-minNum+1))+minNum;
+function randomNum1() {
+    let radomNum = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
     console.log(radomNum);
-    if (radomNum % 7 === 0){
+    if (radomNum % 7 === 0) {
         return true;
     }
     else return false;
@@ -137,22 +137,22 @@ console.log(randomNum1());
 let min = 1;
 let max = 10;
 
-  function randomNum(){
-    let random1 = Math.floor(Math.random()*(max-min+1))+min;
-    let random2 = Math.floor(Math.random()*(max-min+1))+min;
-    let random3 = Math.floor(Math.random()*(max-min+1))+min;
+function randomNum() {
+    let random1 = Math.floor(Math.random() * (max - min + 1)) + min;
+    let random2 = Math.floor(Math.random() * (max - min + 1)) + min;
+    let random3 = Math.floor(Math.random() * (max - min + 1)) + min;
 
     console.log(random1);
     console.log(random2);
     console.log(random3);
 
-    let average = ((random1+random2+random3)/3);
+    let average = ((random1 + random2 + random3) / 3);
     return average.toFixed();
-  }
+}
 
-  console.log(randomNum());
+console.log(randomNum());
 
-  /*
+/*
 
 Write a function named as shorter() which takes two string words as arguments and returns the string that has less characters when invoked.
 NOTE: If both of the words have the same length, then return the second string.
@@ -180,3 +180,83 @@ console.log(shorter("Tech", "Global"));
 console.log(shorter("Hello", "Hi"));
 console.log(shorter("Hello", "World"));
 
+
+
+
+
+function randomNumber() {
+    let max = 3
+    let min = 1
+
+    random1 = Math.floor(Math.random() * (max - min + 1)) + min;
+    random2 = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    console.log(random1);
+    console.log(random2);
+
+    if (random1 === random2) return true;
+    else return false;
+}
+
+console.log(randomNumber());
+
+
+/*
+Write a function named as factorial() which takes a number as an argument and returns the factorial of the number when invoked. NOTE: Mathematically, the factorial of a non-negative integer n is defined as:
+
+n! = n * (n-1) * (n-2) * ... * 2 * 1
+Assume you will not be given a negative number.
+
+Examples:
+factorial(5)   	-> 120
+factorial(4)  	-> 24
+factorial(0)  	-> 1
+factorial(1)  	-> 1
+*/
+
+function factorial(n) {
+
+    if (n === 0 || n === 1) {
+        return 1;
+    }
+    else {
+        return (n * (factorial(n - 1)))
+    }
+
+}
+
+console.log(factorial(3));
+
+
+/*
+Write a function named averageOfEdges() which takes three number arguments and will return average of min and max numbers​.
+
+Examples:
+averageOfEdges(0, 0, 0)      -> 0
+averageOfEdges(0, 0, 6)      -> 3
+averageOfEdges(-2, -2, 10)   -> 4
+averageOfEdges(-3, 15, -3)   -> 6
+averageOfEdges(10, 13, 20)   -> 15
+*/
+
+function averageOfEdges(num1, num2, num3) {
+    return (Math.max(num1, num2, num3) + Math.min(num1, num2, num3)) / 2
+}
+
+
+console.log(averageOfEdges(0, 0, 0))
+console.log(averageOfEdges(0, 0, 6))
+console.log(averageOfEdges(-2, -2, 10))
+console.log(averageOfEdges(-3, 15, -3))
+console.log(averageOfEdges(10, 13, 20))
+
+/*
+Write a function named reverseStringWords() which takes a string as an argument and returns the string back with each word separately reversed when invoked. NOTE: Make your code dynamic that works for any string. Make sure you consider extra spaces before and after words in the given string.
+
+Examples:
+reverseStringWords("Hello World")   		-> "olleH dlroW"
+reverseStringWords("I like JavaScript")   	-> "I ekil tpircSavaJ"
+reverseStringWords("Hello")   		        -> "olleH"
+reverseStringWords("")   			        -> ""
+reverseStringWords("	")   			    -> ""
+*/
