@@ -105,10 +105,10 @@ console.log(sumOfDigits("John's age is 29"));
 console.log(sumOfDigits("$125.0"));
 console.log(sumOfDigits(""));
 
-let max = 50
-let min = 1
+let max1 = 50
+let min1 = 1
 function randomNum(num) {
-    let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+    let randomNum = Math.floor(Math.random() * (max1 - min1 + 1)) + min1;
     console.log(randomNum);
     if (randomNum % 5 === 0) {
         return true;
@@ -134,13 +134,13 @@ function randomNum1() {
 }
 console.log(randomNum1());
 
-let min = 1;
-let max = 10;
+let minimum = 1;
+let maximum = 10;
 
 function randomNum() {
-    let random1 = Math.floor(Math.random() * (max - min + 1)) + min;
-    let random2 = Math.floor(Math.random() * (max - min + 1)) + min;
-    let random3 = Math.floor(Math.random() * (max - min + 1)) + min;
+    let random1 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+    let random2 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+    let random3 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 
     console.log(random1);
     console.log(random2);
@@ -260,3 +260,109 @@ reverseStringWords("Hello")   		        -> "olleH"
 reverseStringWords("")   			        -> ""
 reverseStringWords("	")   			    -> ""
 */
+
+
+// Count the total occurrences of letter o in TechGlobal School  -> 3
+
+let name = "Tech Global School";
+let counter = 0;
+for (let i = 0; i<name.length; i++){
+    if (name[i].toLowerCase() === 'o'){
+        counter++;
+    }
+}
+
+console.log(counter);
+
+// Output all the odd numbers from 1 to Random Number (both inclusive) -> 1 3 5 7 9 ….
+
+let random = Math.floor(Math.random()*(9-1+1))+1;
+console.log(random);
+let arr =[]
+for (let i = 1; i <= random; i++){
+    if (i % 2 !== 0){
+        arr.push(i);
+    }
+}
+
+console.log(arr)
+
+
+for (let i = 1; i<=10; i++){
+    console.log(i);
+}
+
+///////////
+let arr2 = [];
+for (let i = 100; i>=0; i--){
+    arr2.push(i)
+}
+
+console.log(arr2)
+
+for (let char of arr2){
+    if (char % 2 === 0){
+        console.log(char);
+    }
+}
+//////////////
+
+let sum3 = 0;
+
+for (let i=1; i<=5; i++){
+    sum3 += i;
+}
+
+console.log(sum3)
+
+let sum2 = 0;
+for(let i=10; i<=15; i++){
+    sum2 +=i;
+}
+console.log(sum2)
+
+////// 
+/*
+Assume that we are playing a game and one person in the class is just writing a number on a paper and others are trying to guess the number 
+NOTE: number can only be between 1 to 10 ( 1 and 10 are included)
+See how many attempts it is going to take to find the number?
+*/
+let guessNum = Math.floor(Math.random()*(10-1+1))+1;
+
+let tryGuess = 1;
+
+for(i=Math.floor(Math.random()*(10-1+1))+1; i<=Math.floor(Math.random()*(10-i+1))+i; i++){
+    if (i === guessNum){
+        break;
+    }
+    else {
+        tryGuess++;
+    }
+}
+console.log(guessNum);
+console.log(tryGuess);
+
+//
+/*
+Assume that we are playing a game and one person in the class is just writing a number on a paper and others are trying to guess the number 
+NOTE: number can only be between 1 to 10 ( 1 and 10 are included)
+See how many attempts it is going to take to find the number?
+*/
+
+let maxNumber = 50;
+let minNumber= 1;
+let randNum;
+let gameNum = Math.floor(Math.random()*(maxNumber-minNumber+1))+minNumber;
+console.log(`Tutan sayi ${gameNum}`);
+let tries = 1;
+
+while (randNum !== gameNum){
+    randNum = Math.floor(Math.random()*(maxNumber-minNumber+1))+minNumber;
+    console.log(`tahminim ${randNum}`)
+    tries++;
+}
+
+
+console.log(`Tahmin sayisi ${tries}`);
+
+/////////////

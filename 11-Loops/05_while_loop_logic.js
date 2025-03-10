@@ -5,7 +5,7 @@ let attempt = 0;
 
 for ( ; ; ) {
     let randomNumber = getRandomNumber(1,10);
-    attempts++;
+    attempt++;
     console.log(randomNumber);
 
     if (randomNumber === gameNumber){
@@ -13,8 +13,8 @@ for ( ; ; ) {
     }
 }
 
-let time = attempts === 1 ? 'time' : 'times'
-console.log(`Game is over after ${attempts} ${time}!`);
+let time = attempt === 1 ? 'time' : 'times'
+console.log(`Game is over after ${attempt} ${time}!`);
 
 // better way to do that :D
 
