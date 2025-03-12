@@ -118,3 +118,158 @@ console.log(countMultipleWords([]));
 
 // Task 9
 console.log("----Task 9----");
+
+function count3OrLess(string) {
+    let word = string.trim().split(/\s+/);
+    let count = 0;
+    for (let i = 0; i < word.length; i++) {
+        if (word[i].length <= 3) {
+            if (word[i].length === 0){
+                count = 0;
+            }
+            else count++;
+        }
+    }
+    return count;
+}
+console.log(count3OrLess("Hello"))
+console.log(count3OrLess("Hi John"));
+console.log(count3OrLess("JavaScript is fun"));
+console.log(count3OrLess("My name is John Doe"));
+console.log(count3OrLess(""));
+
+
+// Task 10
+console.log("----Task 10----");
+
+function isPrime(number){
+    if (number < 2){
+        return false;
+    }
+    if (number === 2){
+        return true;
+    }
+    for(let i = 2; i <=9; i++){
+        if (number % i === 0 && number !== i){
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(isPrime(5));
+console.log(isPrime(2));
+console.log(isPrime(29));
+console.log(isPrime(-5));
+console.log(isPrime(0));
+console.log(isPrime(1));
+
+
+
+// Task 11
+console.log("----Task 11----");
+
+function add(arr1, arr2){
+    let sumArr = [];
+    
+    for (let i = 0; i < Math.max(arr1.length, arr2.length); i++){
+        sumArr.push((arr1[i] || 0 ) + (arr2[i] || 0));
+    }
+    return sumArr;
+}
+
+console.log(add([3, 0, 0, 7, 5, 10], [6, 3, 2]));
+console.log(add([10, 3, 6, 3, 2], [6, 8, 3, 0, 0, 7, 5, 10, 34]));
+console.log(add([-5, 6, -3, 11], [5, -6, 3, -11]));
+console.log(add([], [1, 2, 3]));
+console.log(add([4, 5, 6], []));
+
+
+// Task 12
+console.log("----Task 12----");
+
+function removeExtraSpaces(string){
+    return string.trim().split(/\s+/).join(' ');
+}
+
+console.log(removeExtraSpaces("   Hello Word    "));
+console.log(removeExtraSpaces("      Hello    World     "));
+console.log(removeExtraSpaces("     JavaScript is          fun"));
+console.log(removeExtraSpaces(""));
+
+// Task 13
+console.log("----Task 13----");
+
+function findClosestTo10(array) {
+    let closest;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === 10) {
+            array[i] = 99;
+        }
+        if (closest === undefined) {
+            closest = array[i];
+        }
+        for (let j = i + 1; j < array.length; j++) {
+            if (Math.abs(10 - array[i]) < Math.abs(10 - closest)) {
+                closest = array[i];
+            }
+            if (Math.abs(10 - array[i]) === Math.abs(10 - closest) && array[i] < closest) {
+                closest = array[i];
+            }
+            if (Math.abs(10 - array[j]) < Math.abs(10 - closest)) {
+                closest = array[j];
+            }
+            if (Math.abs(10 - array[j]) === Math.abs(10 - closest) && array[j] < closest) {
+                closest = array[j];
+            }
+        }
+    }
+
+    return closest;
+}
+console.log(findClosestTo10([10, -13, 5, 70, 15, 57]));
+console.log(findClosestTo10([10, -13, 8, 12, 15, -20]));
+console.log(findClosestTo10([0, -1, -2]));
+
+
+
+// Task 14
+console.log("----Task 14----");
+
+function isEmailValid(email) {
+    if (email.indexOf(' ') !== -1) {
+        return false;
+    }
+
+    let atCount = 0;
+    for (let i = 0; i < email.length; i++) {
+        if (email[i] === '@') {
+            atCount++;
+        }
+    }
+    if (atCount !== 1) {
+        return false;
+    }
+
+    let parts = email.split('@');
+    if (parts[0].length < 2 || parts[1].length < 3) {
+        return false;
+    }
+
+    let domainParts = parts[1].split('.');
+    if (domainParts.length !== 2 || domainParts[0].length < 2 || domainParts[1].length < 2) {
+        return false;
+    }
+
+    return true;
+}
+
+
+console.log(isEmailValid(""));
+console.log(isEmailValid("@gmail.com"));
+console.log(isEmailValid("johndoe@yahoo"));
+console.log(isEmailValid("johndoe@.com"));
+console.log(isEmailValid("a@outlook.com"));
+console.log(isEmailValid("johndoe@a.com"));
+console.log(isEmailValid("johndoe@@gmail.com"));
+console.log(isEmailValid("johndoe@gmail.com"));
