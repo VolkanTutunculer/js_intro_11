@@ -1,10 +1,10 @@
 // Task 1
 console.log("----Task 1----");
 
-function countPos(array){
+function countPos(array) {
     let countPositive = 0;
-    for(const arr of array){
-        if (arr > 0){
+    for (const arr of array) {
+        if (arr > 0) {
             countPositive++
         }
     }
@@ -13,13 +13,13 @@ function countPos(array){
 
 console.log(countPos([-45, 0, 0, 34, 5, 67]));
 console.log(countPos([-23, -4, 0, 2, 5, 90, 123]));
-console.log(countPos([0, -1, -2, -3]) );
+console.log(countPos([0, -1, -2, -3]));
 
 
 // Task 2
 console.log("----Task 2----");
 
-function countA(string){
+function countA(string) {
     return string.split('').filter(strA => strA.toLowerCase().includes('a')).length;
 }
 
@@ -57,7 +57,7 @@ console.log(countVowels(""));
 // Task 5
 console.log("----Task 5----");
 
-function countWords(string){
+function countWords(string) {
     return string.trim().split(/\s+/);
 }
 
@@ -83,9 +83,9 @@ console.log(factorial(5));
 console.log("----Task 7----");
 
 function isPalindromel(string) {
-const word = string.toLowerCase();
-const reverseWord = word.split('').reverse().join('');
-return word === reverseWord;
+    const word = string.toLowerCase();
+    const reverseWord = word.split('').reverse().join('');
+    return word === reverseWord;
 }
 
 console.log(isPalindromel("Hello"));
@@ -124,7 +124,7 @@ function count3OrLess(string) {
     let count = 0;
     for (let i = 0; i < word.length; i++) {
         if (word[i].length <= 3) {
-            if (word[i].length === 0){
+            if (word[i].length === 0) {
                 count = 0;
             }
             else count++;
@@ -142,15 +142,15 @@ console.log(count3OrLess(""));
 // Task 10
 console.log("----Task 10----");
 
-function isPrime(number){
-    if (number < 2){
+function isPrime(number) {
+    if (number < 2) {
         return false;
     }
-    if (number === 2){
+    if (number === 2) {
         return true;
     }
-    for(let i = 2; i <=9; i++){
-        if (number % i === 0 && number !== i){
+    for (let i = 2; i <= 9; i++) {
+        if (number % i === 0 && number !== i) {
             return false;
         }
     }
@@ -169,11 +169,11 @@ console.log(isPrime(1));
 // Task 11
 console.log("----Task 11----");
 
-function add(arr1, arr2){
+function add(arr1, arr2) {
     let sumArr = [];
-    
-    for (let i = 0; i < Math.max(arr1.length, arr2.length); i++){
-        sumArr.push((arr1[i] || 0 ) + (arr2[i] || 0));
+
+    for (let i = 0; i < Math.max(arr1.length, arr2.length); i++) {
+        sumArr.push((arr1[i] || 0) + (arr2[i] || 0));
     }
     return sumArr;
 }
@@ -188,7 +188,7 @@ console.log(add([4, 5, 6], []));
 // Task 12
 console.log("----Task 12----");
 
-function removeExtraSpaces(string){
+function removeExtraSpaces(string) {
     return string.trim().split(/\s+/).join(' ');
 }
 
