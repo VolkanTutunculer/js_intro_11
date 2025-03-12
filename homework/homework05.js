@@ -273,3 +273,33 @@ console.log(isEmailValid("a@outlook.com"));
 console.log(isEmailValid("johndoe@a.com"));
 console.log(isEmailValid("johndoe@@gmail.com"));
 console.log(isEmailValid("johndoe@gmail.com"));
+
+// Task 15
+console.log("----Task 15----");
+
+
+function isPasswordValid(string) {
+    if (string.includes(" ")) {
+        return false;
+    }
+    if (string.length < 8 || string.length > 16) {
+        return false;
+    }
+    if (!string.match(/[a-zA-z]/)) {
+        return false
+    }
+    if (!string.match(/[1-9]/)) {
+        return false;
+    }
+    if (!string.match(/[\W_]/)) {
+        return false;
+    }
+    return true;
+}
+
+console.log(isPasswordValid("Abcd1234$"));
+console.log(isPasswordValid("abcd"));
+console.log(isPasswordValid("Abcd1234"));
+console.log(isPasswordValid("Chicago123$"));
+console.log(isPasswordValid("Test1234#"));
+console.log(isPasswordValid("Invalid Pass"));
