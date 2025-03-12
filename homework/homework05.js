@@ -81,3 +81,40 @@ console.log(factorial(5));
 
 // Task 7
 console.log("----Task 7----");
+
+function isPalindromel(string) {
+const word = string.toLowerCase();
+const reverseWord = word.split('').reverse().join('');
+return word === reverseWord;
+}
+
+console.log(isPalindromel("Hello"));
+console.log(isPalindromel("Kayak"));
+console.log(isPalindromel("civic"));
+console.log(isPalindromel("abba"));
+console.log(isPalindromel("ab  a"));
+console.log(isPalindromel("123454321"));
+console.log(isPalindromel("A"));
+console.log(isPalindromel(""));
+
+// Task 8
+console.log("----Task 8----");
+
+function countMultipleWords(array) {
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].trim().includes(" ")) {
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(countMultipleWords(["foo", "", "    ", "foo bar", "     foo"]));
+console.log(countMultipleWords(["foo", "bar", "foobar", "     foobar   "]));
+console.log(countMultipleWords(["f o o", "b a r", "foo bar", "     foo bar   "]));
+console.log(countMultipleWords([]));
+
+
+// Task 9
+console.log("----Task 9----");
