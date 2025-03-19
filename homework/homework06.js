@@ -199,7 +199,7 @@ console.log("----Task 13----");
 
 function mostRepeated(array) {
   let maxCount = 0;
-  let mostRepeatedElement;
+  let mostRepeatedElement = '';
 
   for (let i = 0; i < array.length; i++) {
     let count = 0;
