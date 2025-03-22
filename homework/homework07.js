@@ -140,7 +140,7 @@ function categorizeCharacters(string){
   return [newArr[0].join(''), newArr[1].join(''), newArr[2].join('')];
 }
 
-console.log(categorizeCharacters("1234"))
-console.log(categorizeCharacters("abc123$#%"))
-console.log(categorizeCharacters("12ab$%3c%"))
+console.log(categorizeCharacters("1234"));
+console.log(categorizeCharacters("abc123$#%"));
+console.log(categorizeCharacters("12ab$%3c%"));
 
