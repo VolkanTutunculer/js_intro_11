@@ -109,6 +109,27 @@ console.log(no3and5([7, 4, 11, 23, 17]));
 console.log(no3and5([3, 4, 5, 6]));
 console.log(no3and5([10, 11, 12, 13, 14, 15]));
 
+// Task 8
+console.log("----Task 8----");
+
+const countPrime = (arr) => {
+
+  return arr.filter(num => {
+    if(num < 2) return false;
+    if(num === 2) return true;
+    if(num % 2 === 0) return false
+
+    for(let i = 3; i < num; i+=2){
+      if(num % i === 0) return false
+    }
+    return true;
+  }).length;
+}
+
+console.log(countPrime([-10, -3, 0, 1]))
+console.log(countPrime([7, 4, 11, 23, 17]))
+console.log(countPrime([41, 53, 19, 47, 67]))
+
 // Task 9
 console.log("----Task 9----");
 
