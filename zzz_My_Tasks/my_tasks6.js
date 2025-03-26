@@ -140,8 +140,9 @@ isPalindrome("")            -> true
 */
 
 function isPalindrome(string) {
-  let revStr = [...string].reverse().join("");
-  if (string === revStr) return true;
+  if (string.toLowerCase() === [...string].reverse().join("").toLowerCase())
+    return true;
+  else return false;
 }
 
 console.log(isPalindrome("Hello"));
@@ -152,3 +153,114 @@ console.log(isPalindrome("ab  a"));
 console.log(isPalindrome("123454321"));
 console.log(isPalindrome("A"));
 console.log(isPalindrome(""));
+
+
+// Write a program that generates 2 random numbers between 1 and 10 (both inclusive).
+//Calculate the sum of the numbers and print it.
+
+function randomNum(num1, num2) {
+  let min = Math.min(num1, num2);
+  let max = Math.max(num1, num2);
+
+  let random1 = Math.floor(Math.random() * (max - min + 1)) + min;
+  let random2 = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  console.log(random1);
+  console.log(random2);
+
+  return random1 * random2;
+}
+
+console.log(randomNum(1, 10));
+
+// Write a program that generates 2 random numbers between 1 and 10 (both inclusive).
+// Find the smallest of the numbers and print it.
+
+function randMin(num1, num2){
+  let min = Math.min(num1, num2);
+  let max = Math.max(num1, num2);
+
+  let random1 = Math.floor(Math.random() * (max - min + 1)) + min;
+  let random2 = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  console.log(random1);
+  console.log(random2);
+
+  return Math.min(random1, random2);
+}
+console.log(randMin(1, 10));
+
+// Write a function named as concat() which takes two string words as arguments and returns the words concatenated when invoked.
+// NOTE: Concatenation should always be as first string + second string.
+
+
+function concat(str1, str2){
+  return str1+str2
+}
+
+console.log(concat("Tech", "Global"))
+console.log(concat("Hello", "World"))
+console.log(concat("", "abc"))
+console.log(concat("123", "1234"))
+
+
+// Write a program that generates a random number between 1 and 10 (both inclusive).
+// If the random number is odd, print true.
+// Otherwise, print false.
+
+function randIsOdd(num1, num2){
+  let min = Math.min(num1, num2);
+  let max = Math.max(num1, num2);
+
+  let randNum = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(randNum);
+  if (randNum % 2 !== 0) return true;
+  else return false;
+}
+
+console.log(randIsOdd(1, 10));
+
+// Write a program that generates 3 random numbers between 1 and 10 (both inclusive).
+// Calculate the average of the numbers and print it.
+
+function AvrRandm (num1, num2){
+  let max = Math.max(num1, num2);
+  let min = Math.min(num1, num2);
+
+  let rndm1 = Math.floor(Math.random() * (max - min + 1))+ min;
+  let rndm2 = Math.floor(Math.random() * (max - min + 1))+ min;
+  let rndm3 = Math.floor(Math.random() * (max - min + 1))+ min;
+  
+  console.log(rndm1);
+  console.log(rndm2);
+  console.log(rndm3);
+  
+  return Math.floor((rndm1 + rndm2 + rndm3)/3);
+}
+
+console.log(`Avreage is ${AvrRandm(1, 10)}`);
+
+// Write a function named as firstLast() which takes a string word as an argument and returns the first and the last characters of the given word when invoked.
+// NOTE: If the given word does not have 2 or more characters, then return the string back.
+
+// Examples:
+// firstLast("Tech")		-> "Th"
+// firstLast("TechGlobal")	-> "Tl"
+// firstLast("")			-> ""
+// firstLast(" ")			-> " "
+// firstLast("1")			-> "1"
+// firstLast("abcde")		-> "ae"
+
+function firstLast(string){
+  if (string.length >= 2){
+    return string[0]+[...string].reverse()[0];
+  }
+  else return string;
+}
+
+console.log(firstLast("Tech"))
+console.log(firstLast("TechGlobal"))
+console.log(firstLast(""))
+console.log(firstLast(" "))
+console.log(firstLast("1"))
+console.log(firstLast("abcde"))
