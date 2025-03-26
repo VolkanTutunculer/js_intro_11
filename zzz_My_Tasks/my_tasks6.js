@@ -20,7 +20,7 @@ function firstDuplicate(arr) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
       if (arr[i] === arr[j]) {
-        return firstDub = arr[i];
+        return (firstDub = arr[i]);
       }
     }
   }
@@ -34,14 +34,13 @@ console.log(firstDuplicate([123, "abc", "123", 3, "abc"]));
 console.log(firstDuplicate([1, 2, 3]));
 console.log(firstDuplicate(["foo", "abc", "123", "bar"]));
 
-
 //how many items are negative
 
-function countNeg(arr){
-  let count = 0
+function countNeg(arr) {
+  let count = 0;
 
-  for (let i = 0; i < arr.length; i++){
-    if (arr[i] < 0){
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
       count++;
     }
   }
@@ -51,7 +50,6 @@ function countNeg(arr){
 console.log(countNeg([-45, 0, 0, 34, 5, 67]));
 console.log(countNeg([-23, -4, 0, 2, 5, 90, 123]));
 console.log(countNeg([0, -1, -2, -3]));
-
 
 /*
 Write a function named as firstlastWord() which takes a string word as an argument and returns the first and last words from the given string when invoked. NOTE: Return empty string if the given string does not have any word.
@@ -64,12 +62,11 @@ firstLastWord("")   			        -> ""
 firstLastWord("	")   		            -> ""
 */
 
-function firstLastWord(string){
-  let firstLastArr = string.trim().split(' ');
-  if (firstLastArr.length < 2){
-    return firstLastArr[0]+firstLastArr[0]
-  }
-  else return firstLastArr[0]+firstLastArr[firstLastArr.length-1];
+function firstLastWord(string) {
+  let firstLastArr = string.trim().split(" ");
+  if (firstLastArr.length < 2) {
+    return firstLastArr[0] + firstLastArr[0];
+  } else return firstLastArr[0] + firstLastArr[firstLastArr.length - 1];
 }
 
 console.log(firstLastWord("Hello World"));
@@ -87,21 +84,19 @@ noA(["apple", "123", "ABC", "javascript"])   ->  ["###", "123", "###", "javascri
 noA(["apple", "abc", "ABC", "Alex", "A"])    ->  ["###", "###", "###", "###", "###"]
 */
 
-function noA(arr){
-  let newArr = []
+function noA(arr) {
+  let newArr = [];
 
-  for (let i = 0; i < arr.length; i++){
-    if (arr[i].startsWith('a') || arr[i].startsWith('A'))
-      newArr.push('###')
-    else newArr.push(arr[i])
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].startsWith("a") || arr[i].startsWith("A")) newArr.push("###");
+    else newArr.push(arr[i]);
   }
   return newArr;
 }
 
-
-console.log(noA(["javascript", "hello", "123", "xyz"])  );
+console.log(noA(["javascript", "hello", "123", "xyz"]));
 console.log(noA(["apple", "123", "ABC", "javascript"]));
-console.log(noA(["apple", "abc", "ABC", "Alex", "A"]) );
+console.log(noA(["apple", "abc", "ABC", "Alex", "A"]));
 
 /*
 Write a function named as factorial() which takes a number as an argument and returns the factorial of the number when invoked. NOTE: Mathematically, the factorial of a non-negative integer n is defined as:
@@ -130,7 +125,6 @@ console.log(factorial(4));
 console.log(factorial(0));
 console.log(factorial(1));
 
-
 /*
 Write a function named isPalindrome() which takes a string word as an argument and returns true if the word is palindrome or returns false otherwise when invoked. NOTE: Palindrome: It is a word that is read the same backward as forward Examples: kayak, civic, madam NOTE: your function should ignore case sensitivity
 
@@ -144,3 +138,17 @@ isPalindrome("123454321")   -> true
 isPalindrome("A")           -> true
 isPalindrome("")            -> true
 */
+
+function isPalindrome(string) {
+  let revStr = [...string].reverse().join("");
+  if (string === revStr) return true;
+}
+
+console.log(isPalindrome("Hello"));
+console.log(isPalindrome("Kayak"));
+console.log(isPalindrome("civic"));
+console.log(isPalindrome("abba"));
+console.log(isPalindrome("ab  a"));
+console.log(isPalindrome("123454321"));
+console.log(isPalindrome("A"));
+console.log(isPalindrome(""));
