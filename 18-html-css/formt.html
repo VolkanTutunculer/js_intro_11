@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            background: #d3a97d;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <table>
+                <tr>
+                    <td><label>Name:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>Email:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>Password:</label></td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td><label>Approval Required:</label></td>
+                    <td><input type="checkbox"><label>Do you approve?</label></td>
+                </tr>
+                <tr>
+                    <td><label>Pick Your Favorite:</label></td>
+                    <td>
+                        <label><input type="radio" name="favorite" value="A"> Choice A</label>
+                        <label><input type="radio" name="favorite" value="B"> Choice B</label>
+                        <label><input type="radio" name="favorite" value="C"> Choice C</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Popup Menu:</label></td>
+                    <td>
+                        <select>
+                            <option value="TX">Texas -- TX</option>
+                            <option value="CA">California -- CA</option>
+                            <option value="CO">Colorado -- CO</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>List:</label></td>
+                    <td>
+                        <select multiple>
+                            <option>California -- CA</option>
+                            <option>Colorado -- CO</option>
+                            <option>New York -- CN</option>
+                            <option>Alaska -- AL</option>
+                            <option>Dolorado -- DO</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Field Ignored by KM:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>Text Area:</label></td>
+                    <td><textarea rows="5">Now is the time for all good men to come to the aid of their country</textarea>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <input type="submit" value="Save" style="background-color: blue; color: white;">
+                <input type="button" value="Cancel" style="background-color: gray; color: white;">
+                <input type="button" value="Resize">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
