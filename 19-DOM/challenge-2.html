@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table, th, td {   
+      border: 1px solid black;
+       border-collapse: collapse;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Student Names</th>
+      </tr>
+    </thead>
+    <tbody id="student-table">
+    </tbody>
+  </table>
+
+  <script>
+    const students = ['John', 'Jane', 'Alex', 'Donna'];
+    const tableBody = document.getElementById('student-table');
+    students.forEach(function (studentName) {
+      const studentNameRow = document.createElement('tr');
+      const studentNameBlock = document.createElement('td');
+      studentNameBlock.textContent = studentName;
+      studentNameRow.appendChild(studentNameBlock);
+      tableBody.appendChild(studentNameRow);
+    });
+  </script>
+
+</body>
+
+</html>

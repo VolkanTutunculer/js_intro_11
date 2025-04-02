@@ -79,8 +79,7 @@ function removeStringSpecialsDigits(string) {
   let str = string.split("");
   let onlyStr = [];
   for (let i = 0; i < str.length; i++) {
-    for (let j = 0; j < str.)
-    if (str[i].match(/[a-zA-Z]/) || str[i].match(/[ ]/)) {
+    if (str[i].match(/[a-zA-Z]/) || str[i] === " ") {
       onlyStr.push(str[i]);
     }
   }
@@ -91,14 +90,61 @@ console.log(removeStringSpecialsDigits("123Javascript #$%is fun"));
 console.log(removeStringSpecialsDigits("Cypress"));
 console.log(removeStringSpecialsDigits("Automation123#$%"));
 
-
 // Task 7
 console.log("----Task 7----");
 
-function removeArraySpecialsDigits(strArr){
-  
-} 
+function removeArraySpecialsDigits(strArr) {
+  return strArr.map((str) => str.replace(/[^a-zA-Z]/g, ""));
+}
 
-console.log(removeArraySpecialsDigits(["123Javascript", "#$%is", "fun"]))
-console.log(removeArraySpecialsDigits(["Cypress", "123$%", "###"]))
-console.log(removeArraySpecialsDigits(["Automation", "123#$%tool"]))
+console.log(removeArraySpecialsDigits(["123Javascript", "#$%is", "fun"]));
+console.log(removeArraySpecialsDigits(["Cypress", "123$%", "###"]));
+console.log(removeArraySpecialsDigits(["Automation", "123#$%tool"]));
+
+// Task 8
+console.log("----Task 8----");
+
+function getCommons(arr1, arr2) {
+  let word = [];
+
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      if (arr1[i].toLowerCase() === arr2[j].toLowerCase()) {
+        if (!word.includes(arr1[i])) {
+          word.push(arr1[i]);
+        }
+      }
+    }
+  }
+  return word;
+}
+
+console.log(getCommons(["Javascript", "is", "fun"], ["abc", "xyz", "123"]));
+console.log(
+  getCommons(["Javascript", "is", "fun"], ["Javascript", "C#", "Python"])
+);
+console.log(getCommons(["Javascript", "C#", "C#"], ["Python", "C#", "C++"]));
+
+// Task 9
+console.log("----Task 9----");
+
+function noXInVariables(arr) {
+  let result = [];
+  for (let item of arr) {
+    if (typeof item === "string") {
+      let newItem = item
+        .split("")
+        .filter((char) => char.toLowerCase() !== "x")
+        .join("");
+      if (newItem) result.push(newItem);
+    } else {
+      result.push(item);
+    }
+  }
+  return result;
+}
+
+console.log(noXInVariables(["abc", 123, "#$%"]));
+console.log(noXInVariables(["xyz", 123, "#$%"]));
+console.log(noXInVariables(["x", 123, "#$%"]));
+console.log(noXInVariables(["xyXyxy", "Xx", "ABC"]));
