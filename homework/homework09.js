@@ -181,7 +181,11 @@ console.log(findUniques([-1, -2], [1, 2]));
 console.log("----Task 9----");
 
 function isPowerOf3(number) {
-  if (number % 3 === 0 || number === 1) return true;
+  for (let i = 1; i <= number; i *= 3) {
+    if (i === number) return true;
+  }
+
+  if (number === 1) return true;
   else return false;
 }
 
@@ -192,3 +196,4 @@ console.log(isPowerOf3(27));
 console.log(isPowerOf3(100));
 console.log(isPowerOf3(81));
 console.log(isPowerOf3(9));
+console.log(isPowerOf3(6));
