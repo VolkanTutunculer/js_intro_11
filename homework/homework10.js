@@ -129,3 +129,56 @@ function reverseNumber(number) {
 }
 
 console.log(reverseNumber(173));
+console.log(reverseNumber(321));
+console.log(reverseNumber(21));
+console.log(reverseNumber(0));
+console.log(reverseNumber(111));
+
+
+// Task 6
+console.log("----Task 6---");
+
+function doubleOrTriple(array, value){
+  if (value === true){
+    let doubles = []
+    for(let arr of array){
+      doubles.push(arr * 2)
+    }
+    return doubles;
+  }
+  else {
+    let tribles = []
+    for(let arr of array){
+      tribles.push(arr * 3)
+    }
+    return tribles;
+};
+};
+
+
+console.log(doubleOrTriple([1, 5, 10], true) );
+console.log(doubleOrTriple([3, 7, 2], false) );
+console.log(doubleOrTriple([-1, -2], true));
+console.log(doubleOrTriple([0], false));
+console.log(doubleOrTriple([-1, 0, 1], true));
+
+
+
+// Task 7
+console.log("----Task 7---");
+
+function splitString(string, number){
+  if (string.length < number || string.length % number !== 0){
+    return "";
+  }
+
+  else {
+    return string.slice(0,number) + " " + string.slice(number)
+  }
+};
+
+console.log(splitString("JavaScript", 5));
+console.log(splitString("Java", 2) 	);
+console.log(splitString("Automation", 3));
+console.log(splitString("Hello", 6) );
+console.log(splitString("12", 1) );
