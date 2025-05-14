@@ -82,7 +82,6 @@ console.log(myPow(-5, -3));
 console.log("----Task 5----");
 
 function findLongestWord(string) {
-
   let strArr = string.trim().split(/\s+/);
   let longest = "";
 
