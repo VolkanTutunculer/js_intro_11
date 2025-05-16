@@ -99,3 +99,19 @@ console.log(findLongestWord("This is a sample string for testing"));
 console.log(findLongestWord("One two ten"));
 console.log(findLongestWord(""));
 console.log(findLongestWord("      "));
+
+
+
+
+
+function newFunc(string){
+      newStr = string.trim(/\s+/).toLowerCase();
+      return newStr;
+}
+
+console.log(newFunc("Hello"));
+console.log(newFunc("Programming 123"));
+console.log(newFunc("123AbC!@#"));
+console.log(newFunc("0987654321"));
+console.log(newFunc("     "));
+console.log(newFunc(""));
