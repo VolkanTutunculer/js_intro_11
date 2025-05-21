@@ -20,8 +20,8 @@ function countVC(string) {
 
     let result = {
         vowels: counterV,
-        consonants: counterC - counterV
-    }
+        consonants: counterC - counterV,
+    };
     return result;
 }
 
@@ -45,10 +45,9 @@ function countChars(string) {
         if (newStr[i].match(/[a-z]/)) letterCount++;
         else if (newStr[i].match(/[0-9]/)) numberCount++;
         else if (newStr[i].match(/[^a-z0-9]/)) specialCount++;
-
     }
 
-    let allCount = {}
+    let allCount = {};
     if (letterCount > 0) allCount.letters = letterCount;
     if (numberCount > 0) allCount.numbers = numberCount;
     if (specialCount > 0) allCount.specials = specialCount;
@@ -92,13 +91,67 @@ function maxOccurrences(string) {
 
     return maxChar;
 }
-    console.log(maxOccurrences("Hello"));
-    console.log(maxOccurrences("Occurrences"));
-    console.log(maxOccurrences("    ab    "));
-    console.log(maxOccurrences("12   3   21"));
-    console.log(maxOccurrences("      "));
-    console.log(maxOccurrences(""));
+console.log(maxOccurrences("Hello"));
+console.log(maxOccurrences("Occurrences"));
+console.log(maxOccurrences("    ab    "));
+console.log(maxOccurrences("12   3   21"));
+console.log(maxOccurrences("      "));
+console.log(maxOccurrences(""));
 
-
-    // Task 4
+// Task 4
 console.log("----Task 4----");
+
+function starOut(string) {
+    let result = "";
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] === "*") continue;
+
+        if (i > 0 && string[i - 1] === "*") continue;
+
+        if (i < string.length - 1 && string[i + 1] === "*") continue;
+
+        result += string[i];
+    }
+    return result;
+}
+
+console.log(starOut("ab*cd"));
+console.log(starOut("ab**cd"));
+console.log(starOut("xm*sm*sy"));
+console.log(starOut("abc"));
+console.log(starOut("***"));
+console.log(starOut("   "));
+console.log(starOut(""));
+
+// Task 5
+console.log("----Task 5----");
+function romanToInt(string) {
+
+    const romanNumbers = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
+
+    let sum = 0;
+
+    for (let i = 0; i < string.length; i++) {
+        let firstNum = romanNumbers[string[i]];
+
+        let secondNum = romanNumbers[string[i + 1]];
+
+        if (secondNum !== undefined && firstNum < secondNum) {
+            sum -= firstNum;
+        } 
+        
+        else {
+            sum += firstNum;
+        }
+    }
+    return sum;
+}
+
+console.log(romanToInt("I"));
+console.log(romanToInt("IV"));
+console.log(romanToInt("CXII"));
+console.log(romanToInt("MMM"));
+console.log(romanToInt("MMMDCCCLXXXVIII"));
+console.log(romanToInt("MDCLXVI"));
+
+
