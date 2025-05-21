@@ -1,5 +1,5 @@
 // Task 1
-console.log("----Task 1----\n");
+console.log("\n----Task 1----");
 
 function makeNegative(number) {
   if (number > 0) return -1 * number;
@@ -12,7 +12,7 @@ console.log(makeNegative(0));
 console.log(makeNegative(0.45));
 
 // Task 2
-console.log("----Task 2----\n");
+console.log("\n----Task 2----");
 
 function isSumEvenOrOdd(num1, num2, num3) {
   let sum = num1 + num2 + num3;
@@ -28,7 +28,7 @@ console.log(isSumEvenOrOdd(7, 1, 9));
 console.log(isSumEvenOrOdd(1, 1, 1));
 
 // Task 3
-console.log("----Task 3----\n");
+console.log("\n----Task 3----");
 
 function decimal2(array) {
   let decimalArr = [];
@@ -46,7 +46,7 @@ console.log(decimal2([]));
 console.log(decimal2([4.35623, 8.9742]));
 
 // Task 4
-console.log("----Task 4----\n");
+console.log("\n----Task 4----");
 
 function myPow(num1, num2) {
   let power = 1;
@@ -79,7 +79,7 @@ console.log(myPow(5, 3));
 console.log(myPow(-5, -3));
 
 // Task 5
-console.log("----Task 5----\n");
+console.log("\n----Task 5----");
 
 function findLongestWord(string) {
   let strArr = string.trim().split(/\s+/);

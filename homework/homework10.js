@@ -1,5 +1,5 @@
 // Task 1
-console.log("----Task 1----\n");
+console.log("\n----Task 1----");
 
 function calculateTotalPrice1(objects) {
   const priceList = {
@@ -27,7 +27,7 @@ console.log(
 );
 
 // Task 2
-console.log("----Task 2----\n");
+console.log("\n----Task 2----");
 
 function calculateTotalPrice2(objects) {
   const priceList = {
@@ -68,7 +68,7 @@ console.log(calculateTotalPrice2({ apple: 4, pineapple: 1, orange: 1, mango:3 })
 
 
 // Task 3
-console.log("----Task 3----\n");
+console.log("\n----Task 3----");
 
 function nthWord(string, number){
 
@@ -91,7 +91,7 @@ console.log(nthWord("        QA     stands for Quality Asurance", 4));
 
 
 // Task 4
-console.log("----Task 4----\n");
+console.log("\n----Task 4----");
 
 function isArmstrong(number){
 let numArr = number.toString().split('');
@@ -115,7 +115,7 @@ console.log(isArmstrong(1111));
 console.log(isArmstrong('153'));
 
 // Task 5
-console.log("----Task 5---");
+console.log("\n----Task 5---");
 
 function reverseNumber(number) {
   let reverseNumber = 0;
@@ -136,7 +136,7 @@ console.log(reverseNumber(111));
 
 
 // Task 6
-console.log("----Task 6---");
+console.log("\n----Task 6---");
 
 function doubleOrTriple(array, value){
   if (value === true){
@@ -165,7 +165,7 @@ console.log(doubleOrTriple([-1, 0, 1], true));
 
 
 // Task 7
-console.log("----Task 7---");
+console.log("\n----Task 7---");
 
 function splitString(string, number){
   if (string.length < number || string.length % number !== 0){

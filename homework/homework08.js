@@ -1,5 +1,5 @@
 // Task 1
-console.log("----Task 1----\n");
+console.log("\n----Task 1----");
 
 function hasLowerCase(string) {
   if (string.trim().match(/[a-z]/)) return true;
@@ -13,7 +13,7 @@ console.log(hasLowerCase("125$"));
 console.log(hasLowerCase("   a   "));
 
 // Task 2
-console.log("----Task 2----\n");
+console.log("\n----Task 2----");
 
 function noZero(array) {
   let zeroNone = [];
@@ -32,7 +32,7 @@ console.log(noZero([0, 0, 0]));
 console.log(noZero([10, 100, 0]));
 
 // Task 3
-console.log("----Task 3----\n");
+console.log("\n----Task 3----");
 
 function numberAndSquare(array) {
   return array.map((num) => [num, num * num]);
@@ -45,7 +45,7 @@ console.log(numberAndSquare([0, 0, 0]));
 console.log(numberAndSquare([0, 1, -10]));
 
 // Task 4
-console.log("----Task 4----\n");
+console.log("\n----Task 4----");
 
 function containsValue(array, string) {
   return array.includes(string);
@@ -56,7 +56,7 @@ console.log(containsValue(["abc", "def", "123"], "Abc"));
 console.log(containsValue(["abc", "def", "123", "Javascript", "Hello"], "123"));
 
 // Task 5
-console.log("----Task 5----\n");
+console.log("\n----Task 5----");
 
 function reverseSentence(string) {
   let wordsOfString = string.toLowerCase().split(" ");
@@ -73,7 +73,7 @@ console.log(reverseSentence("Javascript is fun"));
 console.log(reverseSentence("This is a sentence"));
 
 // Task 6
-console.log("----Task 6----\n");
+console.log("\n----Task 6----");
 
 function removeStringSpecialsDigits(string) {
   let str = string.split("");
@@ -91,7 +91,7 @@ console.log(removeStringSpecialsDigits("Cypress"));
 console.log(removeStringSpecialsDigits("Automation123#$%"));
 
 // Task 7
-console.log("----Task 7----\n");
+console.log("\n----Task 7----");
 
 function removeArraySpecialsDigits(strArr) {
   return strArr.map((str) => str.replace(/[^a-zA-Z]/g, ""));
@@ -102,7 +102,7 @@ console.log(removeArraySpecialsDigits(["Cypress", "123$%", "###"]));
 console.log(removeArraySpecialsDigits(["Automation", "123#$%tool"]));
 
 // Task 8
-console.log("----Task 8----\n");
+console.log("\n----Task 8----");
 
 function getCommons(arr1, arr2) {
   let word = [];
@@ -126,7 +126,7 @@ console.log(
 console.log(getCommons(["Javascript", "C#", "C#"], ["Python", "C#", "C++"]));
 
 // Task 9
-console.log("----Task 9----\n");
+console.log("\n----Task 9----");
 
 function noXInVariables(arr) {
   let result = [];

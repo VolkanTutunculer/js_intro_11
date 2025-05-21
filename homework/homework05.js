@@ -1,5 +1,5 @@
 // Task 1
-console.log("----Task 1----\n");
+console.log("\n----Task 1----");
 
 function countPos(array) {
     let countPositive = 0;
@@ -17,7 +17,7 @@ console.log(countPos([0, -1, -2, -3]));
 
 
 // Task 2
-console.log("----Task 2----\n");
+console.log("\n----Task 2----");
 
 function countA(string) {
     return string.split('').filter(strA => strA.toLowerCase().includes('a')).length;
@@ -29,7 +29,7 @@ console.log(countA("Cypress"));
 
 
 // Task 3
-console.log("----Task 3----\n");
+console.log("\n----Task 3----");
 
 function countVowels(string) {
     let vowels = ['a', 'e', 'o', 'u', 'i'];
@@ -42,7 +42,7 @@ console.log(countVowels("JavaScript is fun"))
 console.log(countVowels(""));
 
 // Task 4
-console.log("----Task 4----\n");
+console.log("\n----Task 4----");
 
 function countVowels(string) {
     let vowels = ['a', 'e', 'o', 'u', 'i'];
@@ -55,7 +55,7 @@ console.log(countVowels("JavaScript is fun"))
 console.log(countVowels(""));
 
 // Task 5
-console.log("----Task 5----\n");
+console.log("\n----Task 5----");
 
 function countWords(string) {
     return string.trim().split(/\s+/);
@@ -66,7 +66,7 @@ console.log(countWords("Cypress is an UI automation tool.    "));
 console.log(countWords("1 2 3 4"));
 
 // Task 6
-console.log("----Task 6----\n");
+console.log("\n----Task 6----");
 
 function factorial(number) {
     if (number === 0) {
@@ -80,7 +80,7 @@ function factorial(number) {
 console.log(factorial(5));
 
 // Task 7
-console.log("----Task 7----\n");
+console.log("\n----Task 7----");
 
 function isPalindromel(string) {
     const word = string.toLowerCase();
@@ -98,7 +98,7 @@ console.log(isPalindromel("A"));
 console.log(isPalindromel(""));
 
 // Task 8
-console.log("----Task 8----\n");
+console.log("\n----Task 8----");
 
 function countMultipleWords(array) {
     let count = 0;
@@ -117,7 +117,7 @@ console.log(countMultipleWords([]));
 
 
 // Task 9
-console.log("----Task 9----\n");
+console.log("\n----Task 9----");
 
 function count3OrLess(string) {
     let word = string.trim().split(/\s+/);
@@ -140,7 +140,7 @@ console.log(count3OrLess(""));
 
 
 // Task 10
-console.log("----Task 10----\n");
+console.log("\n----Task 10----");
 
 function isPrime(number) {
     if (number < 2) {
@@ -167,7 +167,7 @@ console.log(isPrime(1));
 
 
 // Task 11
-console.log("----Task 11----\n");
+console.log("\n----Task 11----");
 
 function add(arr1, arr2) {
     let sumArr = [];
@@ -186,7 +186,7 @@ console.log(add([4, 5, 6], []));
 
 
 // Task 12
-console.log("----Task 12----\n");
+console.log("\n----Task 12----");
 
 function removeExtraSpaces(string) {
     return string.trim().split(/\s+/).join(' ');
@@ -198,7 +198,7 @@ console.log(removeExtraSpaces("     JavaScript is          fun"));
 console.log(removeExtraSpaces(""));
 
 // Task 13
-console.log("----Task 13----\n");
+console.log("\n----Task 13----");
 
 function findClosestTo10(array) {
     let closest;
@@ -234,7 +234,7 @@ console.log(findClosestTo10([0, -1, -2]));
 
 
 // Task 14
-console.log("----Task 14----\n");
+console.log("\n----Task 14----");
 
 function isEmailValid(email) {
     if (email.indexOf(' ') !== -1) {
@@ -275,7 +275,7 @@ console.log(isEmailValid("johndoe@@gmail.com"));
 console.log(isEmailValid("johndoe@gmail.com"));
 
 // Task 15
-console.log("----Task 15----\n");
+console.log("\n----Task 15----");
 
 
 function isPasswordValid(string) {

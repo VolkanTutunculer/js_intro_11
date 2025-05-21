@@ -1,5 +1,5 @@
 // Task 1
-console.log("----Task 1----\n");
+console.log("\n----Task 1----");
 
 function countPalindrome(string){
     let stringArrays = string.split(" ");
@@ -23,7 +23,7 @@ console.log(countPalindrome("ab"));
 
 
 // Task 2
-console.log("----Task 2----\n");
+console.log("\n----Task 2----");
 
 function sum(array, boolean) {
   let sum = 0;
@@ -46,7 +46,7 @@ console.log(sum([0, -1, 15, 1], false));
 console.log(sum([1, 2, 3, 4, -4], true));
 
 // Task 3
-console.log("----Task 3----\n");
+console.log("\n----Task 3----");
 
 function nthChars(string, number) {
   let newStr = [];
@@ -67,7 +67,7 @@ console.log(nthChars("Hi", 4));
 console.log(nthChars("0123456789", 2));
 
 // Task 4
-console.log("----Task 4----\n");
+console.log("\n----Task 4----");
 
 function canFormString(str1, str2) {
   let noCaseStr1 = str1.toLowerCase().replace(/\s/g, "");
@@ -89,7 +89,7 @@ console.log(canFormString("CONVERSATION", "voices rant on"));
 console.log(canFormString("12", "123"));
 
 // Task 5
-console.log("----Task 5----\n");
+console.log("\n----Task 5----");
 
 function isAnagram(str1, str2) {
   let noCaseStr1 = str1.toLowerCase().replace(/\s/g, "");
@@ -115,7 +115,7 @@ console.log(isAnagram("123", "1234"));
 
 
 // Task 6
-console.log("----Task 6----\n");
+console.log("\n----Task 6----");
 
 function count(array, boolean) {
   let counter = 0;
@@ -136,7 +136,7 @@ console.log(count([0, -1, 15, 1], false));
 console.log(count([1, 2, 3, 4, -4], true));
 
 // Task 7
-console.log("----Task 7----\n");
+console.log("\n----Task 7----");
 
 function sumDigitsDouble(string) {
   let onlyNums = string.match(/\d/g);

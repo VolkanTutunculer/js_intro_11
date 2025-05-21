@@ -1,5 +1,5 @@
 // Task 1
-console.log("----Task 1----\n");
+console.log("\n----Task 1----");
 
 function noSpace(string) {
   return string.trim().split(/\s+/).join("");
@@ -12,7 +12,7 @@ console.log(noSpace(" Hello World   "));
 console.log(noSpace("Tech Global"));
 
 // Task 2
-console.log("----Task 2----\n");
+console.log("\n----Task 2----");
 
 function replaceFirstLast(string) {
   if (string.trim().length < 2) return "";
@@ -29,7 +29,7 @@ console.log(replaceFirstLast("A"));
 console.log(replaceFirstLast("    A      "));
 
 // Task 3
-console.log("----Task 3----\n");
+console.log("\n----Task 3----");
 
 function hasVowel(string) {
   if (string.toLowerCase().includes("a", "e", "o", "u", "i")) return true;
@@ -43,7 +43,7 @@ console.log(hasVowel("1234"));
 console.log(hasVowel("ABC"));
 
 // Task 4
-console.log("----Task 4----\n");
+console.log("\n----Task 4----");
 
 function checkAge(number) {
   const date = new Date().getFullYear();
@@ -61,7 +61,7 @@ console.log(checkAge(1920));
 console.log(checkAge(1800));
 
 // Task 5
-console.log("----Task 5----\n");
+console.log("\n----Task 5----");
 
 function averageOfEdges(num1, num2, num3) {
   return (Math.max(num1, num2, num3) + Math.min(num1, num2, num3)) / 2;
@@ -74,7 +74,7 @@ console.log(averageOfEdges(-3, 15, -3));
 console.log(averageOfEdges(10, 13, 20));
 
 // Task 6
-console.log("----Task 6----\n");
+console.log("\n----Task 6----");
 
 function noA(arrString) {
   for (let i = 0; i < arrString.length; i++) {
@@ -90,7 +90,7 @@ console.log(noA(["apple", "123", "ABC", "javascript"]));
 console.log(noA(["apple", "abc", "ABC", "Alex", "A"]));
 
 // Task 7
-console.log("----Task 7----\n");
+console.log("\n----Task 7----");
 
 function no3and5(arrNumber) {
   for (let i = 0; i < arrNumber.length; i++) {
@@ -110,7 +110,7 @@ console.log(no3and5([3, 4, 5, 6]));
 console.log(no3and5([10, 11, 12, 13, 14, 15]));
 
 // Task 8
-console.log("----Task 8----\n");
+console.log("\n----Task 8----");
 
 const countPrime = (arr) => {
 
@@ -131,7 +131,7 @@ console.log(countPrime([7, 4, 11, 23, 17]))
 console.log(countPrime([41, 53, 19, 47, 67]))
 
 // Task 9
-console.log("----Task 9----\n");
+console.log("\n----Task 9----");
 
 function removeDuplicates(array) {
   for (let i = 0; i < array.length; i++) {
@@ -149,7 +149,7 @@ console.log(removeDuplicates(["abc", "xyz", "123", "ab", "abc", "ABC"]));
 console.log(removeDuplicates(["1", "2", "3", "2", "3"]));
 
 // Task 10
-console.log("----Task 10----\n");
+console.log("\n----Task 10----");
 
 function isDateFormatValid(string) {
   if (!string.includes("/")) return false;
@@ -178,7 +178,7 @@ console.log(isDateFormatValid("10/2/2020"));
 console.log(isDateFormatValid("10/02/2020 "));
 
 // Task 11
-console.log("----Task 11----\n");
+console.log("\n----Task 11----");
 
 function secondMax(array) {
   let noDubArr = [];
@@ -197,7 +197,7 @@ console.log(secondMax([3, 4, 5, 6]));
 console.log(secondMax([10]));
 
 // Task 12
-console.log("----Task 12----\n");
+console.log("\n----Task 12----");
 
 function secondMin(array) {
   let noDubArr = [];
@@ -216,7 +216,7 @@ console.log(secondMin([3, 4, 5, 6]));
 console.log(secondMin([10]));
 
 // Task 13
-console.log("----Task 13----\n");
+console.log("\n----Task 13----");
 
 function mostRepeated(array) {
   let maxCount = 0;

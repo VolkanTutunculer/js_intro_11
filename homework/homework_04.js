@@ -1,5 +1,5 @@
 // Task 1
-console.log("----Task 1----\n");
+console.log("\n----Task 1----");
 
 for (let i = 1; i <= 100; i++) {
     if (i % 7 === 0) {
@@ -8,7 +8,7 @@ for (let i = 1; i <= 100; i++) {
 };
 
 // Task 2
-console.log("----Task 2----\n");
+console.log("\n----Task 2----");
 
 for (let i = 1; i <= 100; i++) {
     if (i % 6 === 0) {
@@ -17,7 +17,7 @@ for (let i = 1; i <= 100; i++) {
 };
 
 // Task 3
-console.log("----Task 3----\n");
+console.log("\n----Task 3----");
 
 for (let i = 100; i >= 50; i--) {
     if (i % 5 === 0) {
@@ -26,14 +26,14 @@ for (let i = 100; i >= 50; i--) {
 }
 
 // Task 4
-console.log("----Task 4----\n");
+console.log("\n----Task 4----");
 
 for (let i = 0; i <= 7; i++) {
     console.log(`The square of ${i} is = ${i ** 2}`);
 }
 
 // Task 5
-console.log("----Task 5----\n");
+console.log("\n----Task 5----");
 
 let sum = 0;
 
@@ -44,7 +44,7 @@ for (let i = 1; i <= 10; i++) {
 console.log(sum);
 
 // Task 6
-console.log("----Task 6----\n");
+console.log("\n----Task 6----");
 
 
 let min = 1;
@@ -62,7 +62,7 @@ for (let i = 1; i <= randomNum; i++) {
 console.log(factorial);
 
 // Task 7
-console.log("----Task 7----\n");
+console.log("\n----Task 7----");
 
 let counter = 1;
 let ranNum;
@@ -82,7 +82,7 @@ console.log(`The random number is ${ranNum} and it took ${counter} attempt/s to 
 `);
 
 // Task 8
-console.log("----Task 8----\n");
+console.log("\n----Task 8----");
 
 let countries = ["Germany", "Argentina", "Ukraine", "Romania"
 ]
@@ -90,7 +90,7 @@ console.log(countries);
 console.log([...countries].sort());
 
 // Task 9
-console.log("----Task 9----\n");
+console.log("\n----Task 9----");
 
 let cartoons = ['Scooby Doo', 'Snoopy', 'Blue', 'Pluto', 'Dino', 'Sparky']
 console.log(cartoons);
@@ -98,14 +98,14 @@ console.log(cartoons.includes('Pluto'));
 
 
 // Task 10
-console.log("----Task 10----\n");
+console.log("\n----Task 10----");
 
 let cartoonCats = ['Garfield', 'Tom', 'Sylvester', 'Azrael']
 console.log([...cartoonCats].sort());
 console.log(cartoonCats.includes('Garfield') && cartoonCats.includes('Felix'));
 
 // Task 11
-console.log("----Task 11----\n");
+console.log("\n----Task 11----");
 
 let numbers = [10.5, 20.75, 70, 80, 15.75];
 console.log(numbers);
@@ -114,7 +114,7 @@ for (const num of numbers) {
 }
 
 // Task 12
-console.log("----Task 12----\n");
+console.log("\n----Task 12----");
 
 let objects = ['Pen', 'notebook', 'Book', 'paper', 'bag', 'pencil', 'Ruler']
 
@@ -135,7 +135,7 @@ console.log(`Elements having 'book' or 'pen' = ${have}`);
 
 
 // Task 13
-console.log("----Task 13----\n");
+console.log("\n----Task 13----");
 
 let numbersArr = [3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78];
 let moreThan10 = 0;
@@ -155,7 +155,7 @@ console.log(`Elements that are 10 = ${count10}`)
 
 
 // Task 14
-console.log("----Task 14---");
+console.log("\n----Task 14---");
 
 let firstArr = [5, 8, 13, 1, 2];
 let secondArr = [9, 3, 67, 1, 0];
@@ -176,7 +176,7 @@ console.log(secondArr);
 console.log(greatArr);
 
 // Task 15
-console.log("----Task 15---");
+console.log("\n----Task 15---");
 
 function firstDuplicate(array) {
     for (let i = 0; i < array.length; i++) {
@@ -199,7 +199,7 @@ console.log(firstDuplicate(['foo', 'abc', '123', 'bar']));
 
 
 // Task 16
-console.log("----Task 16---");
+console.log("\n----Task 16---");
 
 function getDuplicates(array) {
     let dublicateArr = [];
@@ -220,7 +220,7 @@ console.log(getDuplicates(['foo', '12', 12, 'bar', 'a']));
 
 
 // Task 17
-console.log("----Task 17---");
+console.log("\n----Task 17---");
 
 function reverseStringWords(string) {
     let words = string.trim().split(/\s+/);
@@ -235,7 +235,7 @@ console.log(reverseStringWords(""))
 console.log(reverseStringWords("    "))
 
 // Task 18
-console.log("----Task 18---");
+console.log("\n----Task 18---");
 
 
 function getEvens(num1, num2) {
@@ -255,7 +255,7 @@ console.log(getEvens(4, 4));
 console.log(getEvens(3, 3));
 
 // Task 19
-console.log("----Task 19---");
+console.log("\n----Task 19---");
 
 
 function getMultipleOf5(num1, num2) {
@@ -279,7 +279,7 @@ console.log(getMultipleOf5(2, 4));
 
 
 // Task 20
-console.log("----Task 20---");
+console.log("\n----Task 20---");
 
 function fizzBuzz(num1, num2) {
     let arr = [];
