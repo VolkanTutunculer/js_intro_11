@@ -1,5 +1,5 @@
 // Task 1
-console.log("----Task 1----");
+console.log("----Task 1----\n");
 
 function countVC(string) {
     let counterV = 0;
@@ -32,7 +32,7 @@ console.log(countVC("123!@#xyz"));
 console.log(countVC(""));
 
 // Task 2
-console.log("----Task 2----");
+console.log("----Task 2----\n");
 
 function countChars(string) {
     let letterCount = 0;
@@ -63,7 +63,7 @@ console.log(countChars("     "));
 console.log(countChars(""));
 
 // Task 3
-console.log("----Task 3----");
+console.log("----Task 3----\n");
 
 function maxOccurrences(string) {
     let newStr = string.replace(/\s/g, "");
@@ -99,7 +99,7 @@ console.log(maxOccurrences("      "));
 console.log(maxOccurrences(""));
 
 // Task 4
-console.log("----Task 4----");
+console.log("----Task 4----\n");
 
 function starOut(string) {
     let result = "";
@@ -124,7 +124,7 @@ console.log(starOut("   "));
 console.log(starOut(""));
 
 // Task 5
-console.log("----Task 5----");
+console.log("----Task 5----\n");
 function romanToInt(string) {
 
     const romanNumbers = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };

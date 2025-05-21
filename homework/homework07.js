@@ -1,5 +1,5 @@
 // Task 1
-console.log("----Task 1----");
+console.log("----Task 1----\n");
 
 function hasUpperCase(string) {
   return /[A-Z]/.test(string);
@@ -11,7 +11,7 @@ console.log(hasUpperCase("$125.0"));
 console.log(hasUpperCase(""));
 
 // Task 2
-console.log("----Task 2----");
+console.log("----Task 2----\n");
 
 function noDigit(string) {
   let splitString = string.trim().split("");
@@ -32,7 +32,7 @@ console.log(noDigit("123Hello World149"));
 console.log(noDigit("123Tech456Global149"));
 
 // Task 3
-console.log("----Task 3----");
+console.log("----Task 3----\n");
 
 function noVowel(string) {
   let noVolwelString = [];
@@ -52,7 +52,7 @@ console.log(noVowel(""));
 console.log(noVowel("125$"));
 
 // Task 4
-console.log("----Task 4----");
+console.log("----Task 4----\n");
 
 function no13(array) {
   let no13Arr = [];
@@ -70,7 +70,7 @@ console.log(no13([13, 13, 13, 13, 13]));
 console.log(no13([]));
 
 // Task 5
-console.log("----Task 5----");
+console.log("----Task 5----\n");
 
 function middleInt(num1, num2, num3) {
   let arrNum = [num1, num2, num3];
@@ -84,7 +84,7 @@ console.log(middleInt(1, 1, 1));
 console.log(middleInt(-1, 25, 10));
 
 // Task 6
-console.log("----Task 6----");
+console.log("----Task 6----\n");
 
 function sumOfDigits(string) {
   let sum = 0;
@@ -102,7 +102,7 @@ console.log(sumOfDigits("$125.0"));
 console.log(sumOfDigits(""));
 
 // Task 7
-console.log("----Task 7----");
+console.log("----Task 7----\n");
 
 function arrFactorial(array) {
   let newArr = [];
@@ -124,7 +124,7 @@ console.log(arrFactorial([5, 0, 6]));
 console.log(arrFactorial([]));
 
 // Task 8
-console.log("----Task 8----");
+console.log("----Task 8----\n");
 
 function categorizeCharacters(string){
   let newArr = [[], [], []];

@@ -1,5 +1,5 @@
 // Task 1
-console.log("----Task 1----");
+console.log("----Task 1----\n");
 
 function calculateTotalPrice1(objects) {
   const priceList = {
@@ -27,7 +27,7 @@ console.log(
 );
 
 // Task 2
-console.log("----Task 2----");
+console.log("----Task 2----\n");
 
 function calculateTotalPrice2(objects) {
   const priceList = {
@@ -68,7 +68,7 @@ console.log(calculateTotalPrice2({ apple: 4, pineapple: 1, orange: 1, mango:3 })
 
 
 // Task 3
-console.log("----Task 3----");
+console.log("----Task 3----\n");
 
 function nthWord(string, number){
 
@@ -91,7 +91,7 @@ console.log(nthWord("        QA     stands for Quality Asurance", 4));
 
 
 // Task 4
-console.log("----Task 4----");
+console.log("----Task 4----\n");
 
 function isArmstrong(number){
 let numArr = number.toString().split('');

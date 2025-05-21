@@ -1,5 +1,5 @@
 // Task 1
-console.log("----Task 1----");
+console.log("----Task 1----\n");
 
 function fizzBuzz1(number) {
   if (number % 15 === 0) return "FizzBuzz";
@@ -18,7 +18,7 @@ console.log(fizzBuzz1(15));
 console.log(fizzBuzz1(-15));
 
 // Task 2
-console.log("----Task 2----");
+console.log("----Task 2----\n");
 
 function fizzBuzz2(number) {
   let numArr = [];
@@ -38,7 +38,7 @@ console.log(fizzBuzz2(15));
 console.log(fizzBuzz2(2));
 
 // Task 3
-console.log("----Task 3----");
+console.log("----Task 3----\n");
 
 function findSumNumbers(string) {
   let onlyNum = string.match(/\d+/g);
@@ -59,7 +59,7 @@ console.log(findSumNumbers("525"));
 console.log(findSumNumbers("3 for 10 dollars"));
 
 // Task 4
-console.log("----Task 4----");
+console.log("----Task 4----\n");
 
 function findBiggestNumber(string) {
   let onlyNumbers = string.match(/\d+/g);
@@ -82,7 +82,7 @@ console.log(findBiggestNumber("525"));
 console.log(findBiggestNumber("3 for 10 dollars"));
 
 // Task 5
-console.log("----Task 5----");
+console.log("----Task 5----\n");
 
 function countOccurrencesOfCharacters(string) {
   if (string.length === 0) return "";
@@ -109,7 +109,7 @@ console.log(countOccurrencesOfCharacters("aaAAa"));
 console.log(countOccurrencesOfCharacters("www"));
 
 // Task 6
-console.log("----Task 6----");
+console.log("----Task 6----\n");
 function fibonacciSeries1(number) {
   let series = [0, 1];
   if (number <= 1) return series[0];
@@ -132,7 +132,7 @@ console.log(fibonacciSeries1(1));
 console.log(fibonacciSeries1(2));
 
 // Task 7
-console.log("----Task 7----");
+console.log("----Task 7----\n");
 function fibonacciSeries2(number) {
   let series = [0, 1];
   if (number <= 1) return series[0];
@@ -154,7 +154,7 @@ console.log(fibonacciSeries2(9));
 console.log(fibonacciSeries2(1));
 
 // Task 8
-console.log("----Task 8----");
+console.log("----Task 8----\n");
 
 function findUniques(arr1, arr2) {
   let uniqNumbs = [];
@@ -178,7 +178,7 @@ console.log(findUniques([8, 9], [9, 8, 9]));
 console.log(findUniques([-1, -2], [1, 2]));
 
 // Task 9
-console.log("----Task 9----");
+console.log("----Task 9----\n");
 
 function isPowerOf3(number) {
   for (let i = 1; i <= number; i *= 3) {

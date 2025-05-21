@@ -1,5 +1,5 @@
 // Task 1
-console.log("----Task 1----");
+console.log("----Task 1----\n");
 
 for (let i = 1; i <= 100; i++) {
     if (i % 7 === 0) {
@@ -8,7 +8,7 @@ for (let i = 1; i <= 100; i++) {
 };
 
 // Task 2
-console.log("----Task 2----");
+console.log("----Task 2----\n");
 
 for (let i = 1; i <= 100; i++) {
     if (i % 6 === 0) {
@@ -17,7 +17,7 @@ for (let i = 1; i <= 100; i++) {
 };
 
 // Task 3
-console.log("----Task 3----");
+console.log("----Task 3----\n");
 
 for (let i = 100; i >= 50; i--) {
     if (i % 5 === 0) {
@@ -26,14 +26,14 @@ for (let i = 100; i >= 50; i--) {
 }
 
 // Task 4
-console.log("----Task 4----");
+console.log("----Task 4----\n");
 
 for (let i = 0; i <= 7; i++) {
     console.log(`The square of ${i} is = ${i ** 2}`);
 }
 
 // Task 5
-console.log("----Task 5----");
+console.log("----Task 5----\n");
 
 let sum = 0;
 
@@ -44,7 +44,7 @@ for (let i = 1; i <= 10; i++) {
 console.log(sum);
 
 // Task 6
-console.log("----Task 6----");
+console.log("----Task 6----\n");
 
 
 let min = 1;
@@ -62,7 +62,7 @@ for (let i = 1; i <= randomNum; i++) {
 console.log(factorial);
 
 // Task 7
-console.log("----Task 7----");
+console.log("----Task 7----\n");
 
 let counter = 1;
 let ranNum;
@@ -82,7 +82,7 @@ console.log(`The random number is ${ranNum} and it took ${counter} attempt/s to 
 `);
 
 // Task 8
-console.log("----Task 8----");
+console.log("----Task 8----\n");
 
 let countries = ["Germany", "Argentina", "Ukraine", "Romania"
 ]
@@ -90,7 +90,7 @@ console.log(countries);
 console.log([...countries].sort());
 
 // Task 9
-console.log("----Task 9----");
+console.log("----Task 9----\n");
 
 let cartoons = ['Scooby Doo', 'Snoopy', 'Blue', 'Pluto', 'Dino', 'Sparky']
 console.log(cartoons);
@@ -98,14 +98,14 @@ console.log(cartoons.includes('Pluto'));
 
 
 // Task 10
-console.log("----Task 10----");
+console.log("----Task 10----\n");
 
 let cartoonCats = ['Garfield', 'Tom', 'Sylvester', 'Azrael']
 console.log([...cartoonCats].sort());
 console.log(cartoonCats.includes('Garfield') && cartoonCats.includes('Felix'));
 
 // Task 11
-console.log("----Task 11----");
+console.log("----Task 11----\n");
 
 let numbers = [10.5, 20.75, 70, 80, 15.75];
 console.log(numbers);
@@ -114,7 +114,7 @@ for (const num of numbers) {
 }
 
 // Task 12
-console.log("----Task 12----");
+console.log("----Task 12----\n");
 
 let objects = ['Pen', 'notebook', 'Book', 'paper', 'bag', 'pencil', 'Ruler']
 
@@ -135,7 +135,7 @@ console.log(`Elements having 'book' or 'pen' = ${have}`);
 
 
 // Task 13
-console.log("----Task 13----");
+console.log("----Task 13----\n");
 
 let numbersArr = [3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78];
 let moreThan10 = 0;
