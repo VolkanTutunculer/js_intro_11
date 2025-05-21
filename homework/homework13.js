@@ -17,7 +17,12 @@ function countVC(string) {
             counterC++;
         }
     }
-    return { vowels: counterV, consonants: counterC - counterV };
+
+    let result = {
+        vowels: counterV,
+        consonants: counterC - counterV
+    }
+    return result;
 }
 
 console.log(countVC("Hello"));
@@ -42,11 +47,11 @@ function countChars(string) {
         else if (newStr[i].match(/[^a-z0-9]/)) specialCount++;
 
     }
-    
+
     let allCount = {}
-    if (letterCount > 0) allCount.lettersAmount = letterCount;
-    if (numberCount > 0) allCount.numbersAmount = numberCount;
-    if (specialCount > 0) allCount.specialsAmount = specialCount;
+    if (letterCount > 0) allCount.letters = letterCount;
+    if (numberCount > 0) allCount.numbers = numberCount;
+    if (specialCount > 0) allCount.specials = specialCount;
 
     return allCount;
 }
@@ -58,3 +63,42 @@ console.log(countChars("0987654321"));
 console.log(countChars("     "));
 console.log(countChars(""));
 
+// Task 3
+console.log("----Task 3----");
+
+function maxOccurrences(string) {
+    let newStr = string.replace(/\s/g, "");
+    if (newStr.length === 0) {
+        return "";
+    }
+
+    let counts = {};
+    let maxCount = 0;
+    let maxChar = "";
+
+    for (let i = 0; i < newStr.length; i++) {
+        let char = newStr[i];
+        if (counts[char]) {
+            counts[char]++;
+        } else {
+            counts[char] = 1;
+        }
+
+        if (counts[char] > maxCount) {
+            maxCount = counts[char];
+            maxChar = char;
+        }
+    }
+
+    return maxChar;
+}
+    console.log(maxOccurrences("Hello"));
+    console.log(maxOccurrences("Occurrences"));
+    console.log(maxOccurrences("    ab    "));
+    console.log(maxOccurrences("12   3   21"));
+    console.log(maxOccurrences("      "));
+    console.log(maxOccurrences(""));
+
+
+    // Task 4
+console.log("----Task 4----");
