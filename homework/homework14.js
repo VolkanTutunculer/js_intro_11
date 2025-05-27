@@ -40,9 +40,10 @@ console.log(isPerfectSquare(144));
 console.log("\n----Task 3----");
 
 function convertTemperature(number, string) {
-  if (string === "Celsius") {
+    let lowerCaseString = string.toLowerCase()
+  if (lowerCaseString === "celsius") {
     return (number * 9) / 5 + 32;
-  } else if (string === "Fahrenheit") {
+  } else if (lowerCaseString === "fahrenheit") {
     return ((number - 32) * 5) / 9;
   } else return " Please enter temperature value first, then enter unit";
 }
