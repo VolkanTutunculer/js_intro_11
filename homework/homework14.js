@@ -54,6 +54,44 @@ console.log(convertTemperature(212, "Fahrenheit"));
 console.log(convertTemperature(-40, "Celsius"));
 console.log(convertTemperature(-40, "Fahrenheit"));
 
-
 // Task 4
 console.log("\n----Task 4----");
+
+function sumOfEvenNumbers(array) {
+  let sum = 0;
+
+  for (let arr of array) {
+    if (arr % 2 === 0) {
+      sum += arr;
+    }
+  }
+  return sum;
+}
+
+console.log(sumOfEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+console.log(sumOfEvenNumbers([2, 4, 6, 8, 10, 12, 14, 16, 18, 20]));
+console.log(sumOfEvenNumbers([1, 3, 5, 7, 9, 11, 13, 15, 17, 19]));
+console.log(sumOfEvenNumbers([]));
+console.log(sumOfEvenNumbers([1, 2, 3, 4, 5]));
+console.log(sumOfEvenNumbers([10, 20, 30, 40, 50]));
+
+// Task 5
+console.log("\n----Task 5----");
+
+function capsOdds(array) {
+  let newArray = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (i % 2 !== 0) {
+      newArray.push(array[i].toUpperCase());
+    } else newArray.push(array[i]);
+  }
+
+  return newArray;
+}
+
+console.log(capsOdds(["Hello", "World"]));
+console.log(capsOdds(["Jan", "Feb", "Mar", "Apr"]));
+console.log(capsOdds(["Apple", "Banana", "123", "456", "Peach", "Kiwi"]));
+console.log(capsOdds([]));
+console.log(capsOdds(["John !@#$%", "^&*() Doe"]));
