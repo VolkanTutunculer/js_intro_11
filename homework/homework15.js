@@ -1,5 +1,3 @@
-const { RetryAgent } = require("undici-types");
-
 // Task 1
 console.log("\n----Task 1----");
 
