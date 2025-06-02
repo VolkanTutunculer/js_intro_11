@@ -6,8 +6,7 @@ function toCamelCase(string) {
   let resultStr = [];
 
   for (let i = 0; i < strArr.length; i++) {
-    if (i === 0 && strArr.length === 1) resultStr.push(strArr[i]);
-    else if (i === 0) resultStr.push(strArr[i].toLowerCase());
+    if (i === 0) resultStr.push(strArr[i].toLowerCase());
     else
       resultStr.push(
         strArr[i].charAt(0).toUpperCase() + strArr[i].slice(1).toLowerCase()
