@@ -1,3 +1,5 @@
+const { RetryAgent } = require("undici-types");
+
 // Task 1
 console.log("\n----Task 1----");
 
@@ -66,3 +68,55 @@ console.log(alternatingCases("Tech Global"));
 console.log(alternatingCases("Tech Global School"));
 console.log(alternatingCases(""));
 console.log(alternatingCases("123!@#aB"));
+
+// Task 4
+console.log("\n----Task 4----");
+
+function isNeutral(str1, str2) {
+  let newStr = "";
+  let errorMessage =
+    "Only '+' or '-' should be entered as character and both string should have same length";
+
+  for (let i = 0; i < str1.length; i++) {
+    if (
+      "+-".includes(str1[i]) &&
+      "+-".includes(str2[i]) &&
+      str1.length === str2.length
+    ) {
+      if (str1[i] === str2[i]) {
+        newStr += str1[i];
+      } else newStr += 0;
+    } else return errorMessage;
+  }
+  return newStr;
+}
+
+console.log(isNeutral("-", "+"));
+console.log(isNeutral("-+", "-+"));
+console.log(isNeutral("-++-", "-+-+"));
+console.log(isNeutral("--++--", "++--++"));
+console.log(isNeutral("+++", "+++"));
+console.log(isNeutral("++?+", "++?+"));
+console.log(isNeutral("++?+", "++?+!as"));
+
+// Task 5
+console.log("\n----Task 5----");
+
+function isTrueOrFalse(string) {
+  let strArr = string.split(" ");
+  let countFHalf = 0;
+  let countSHalf = 0;
+
+  for (let i = 0; i < strArr.length; i++) {
+    if (/^[a-m]/i.test(strArr[i][0])) countFHalf++;
+    else if (/^[n-z]/i.test(strArr[i][0])) countSHalf++;
+  }
+
+  return countFHalf >= countSHalf;
+}
+
+console.log(isTrueOrFalse("A big brown fox caught a bad rabbit"));
+console.log(isTrueOrFalse("Xylophones can obtain Xenon."));
+console.log(isTrueOrFalse("CHOCOLATE MAKES A GREAT SNACK"));
+console.log(isTrueOrFalse("All FOoD tAsTEs NIcE for someONe"));
+console.log(isTrueOrFalse("Got stuck in the Traffic"));
