@@ -53,8 +53,7 @@ function isArraySumEvenOrOdd(array) {
   for (let arr of array) {
     sum += arr;
   }
-  if (sum % 2 === 0 || sum === 0) return "even";
-  else return "odd";
+ return sum % 2 === 0 ? "even" : "odd";
 }
 
 console.log(isArraySumEvenOrOdd([]));
