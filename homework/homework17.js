@@ -24,7 +24,7 @@ console.log(findMedian([0], [0, 1]));
 console.log("\n----Task 2---");
 
 function calculateFactorial(n) {
-  if (n === 0 || n === 1) return 1;
+  if (n <= 1) return 1;
   return n * calculateFactorial(n - 1);
 }
 
